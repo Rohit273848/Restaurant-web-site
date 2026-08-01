@@ -95,128 +95,468 @@
   <!-- Main Content -->
   <main class="flex-grow">
     <!-- Hero Section -->
-    <section class="relative min-h-screen flex items-center justify-center pt-24 pb-16 overflow-hidden">
-      <!-- Hero Background Visual -->
-      <div class="absolute inset-0 z-0">
+    <section class="relative min-h-[92vh] flex items-center justify-center pt-28 pb-20 lg:pt-36 lg:pb-28 overflow-hidden bg-brand-dark" aria-label="Hero Introduction">
+      <!-- Atmospheric Background & Lighting Effects -->
+      <div class="absolute inset-0 z-0 overflow-hidden pointer-events-none">
+        <!-- Background Hero Image with Dark Gradient Mask -->
         <img 
           src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=2000&q=85" 
-          alt="Fine Dining Atmosphere" 
-          class="w-full h-full object-cover scale-105 filter brightness-50"
+          alt="L'Étoile Fine Dining Luxury Atmosphere" 
+          class="w-full h-full object-cover opacity-20 filter brightness-75 scale-105 transition-transform duration-1000"
+          fetchpriority="high"
+          loading="eager"
         />
-        <div class="absolute inset-0 bg-gradient-to-t from-brand-dark via-brand-dark/70 to-slate-950/80"></div>
+        <!-- Radial Ambient Lighting Glows -->
+        <div class="absolute -top-40 -left-40 w-96 h-96 bg-brand-gold/10 rounded-full filter blur-3xl"></div>
+        <div class="absolute -bottom-40 -right-40 w-96 h-96 bg-brand-gold/10 rounded-full filter blur-3xl"></div>
+        <div class="absolute inset-0 bg-gradient-to-b from-brand-dark/90 via-brand-dark/95 to-brand-dark"></div>
       </div>
 
-      <div class="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center" data-aos="fade-up">
-        <span class="section-tag justify-center mb-4">
-          <span class="w-8 h-0.5 bg-brand-gold"></span>
-          Michelin Awarded Gastronomy
-          <span class="w-8 h-0.5 bg-brand-gold"></span>
-        </span>
-        
-        <h1 class="font-serif fluid-hero-title font-bold text-slate-100 mb-6 leading-tight">
-          Where Passion Meets <br/><span class="text-transparent bg-clip-text bg-gold-gradient">Culinary Perfection</span>
-        </h1>
-        
-        <p class="fluid-subtitle text-slate-300 max-w-2xl mx-auto mb-10 leading-relaxed font-light">
-          Indulge in an unforgettable epicurean journey of French heritage and contemporary mastery, crafted with hand-picked seasonal ingredients.
-        </p>
+      <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+          
+          <!-- Content Area (Left Column - 7 cols on lg) -->
+          <div class="lg:col-span-7 flex flex-col items-center lg:items-start text-center lg:text-left" data-aos="fade-right">
+            
+            <!-- Eyebrow Badge -->
+            <div class="inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full bg-brand-dark-card border border-brand-gold/30 shadow-gold-glow mb-6">
+              <span class="flex h-2 w-2 rounded-full bg-brand-gold animate-pulse"></span>
+              <span class="font-sans text-xs font-semibold uppercase tracking-[0.2em] text-brand-gold">
+                Three Michelin Stars • Est. 1998
+              </span>
+            </div>
 
-        <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
-          <a href="menu.html" class="btn-primary w-full sm:w-auto px-9 py-4 text-base">
-            Explore Culinary Menu
-          </a>
-          <a href="contact.html" class="btn-secondary w-full sm:w-auto px-9 py-4 text-base">
-            Contact & Location
-          </a>
+            <!-- Main Heading -->
+            <h1 class="font-serif fluid-hero-title font-bold text-slate-100 mb-6 leading-[1.1] tracking-tight">
+              Where Culinary Passion <br class="hidden sm:inline" />
+              Meets <span class="text-transparent bg-clip-text bg-gold-gradient">Timeless Perfection</span>
+            </h1>
+
+            <!-- Supporting Paragraph -->
+            <p class="fluid-subtitle text-slate-300 font-light leading-relaxed max-w-xl mb-8">
+              Embark on an extraordinary epicurean journey crafted by Master Chef Julian Vance. Experience seasonal French gastronomy harmonized with contemporary innovation.
+            </p>
+
+            <!-- Call-to-Action (CTA) Area -->
+            <div class="flex flex-col sm:flex-row items-center gap-4 w-full sm:w-auto mb-10">
+              <a href="contact.html" class="btn-primary w-full sm:w-auto px-8 py-4 text-sm tracking-wider uppercase flex items-center justify-center gap-3 group">
+                <span>Reserve a Table</span>
+                <svg class="w-4 h-4 text-slate-950 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
+                </svg>
+              </a>
+              <a href="menu.html" class="btn-secondary w-full sm:w-auto px-8 py-4 text-sm tracking-wider uppercase flex items-center justify-center gap-3 group">
+                <svg class="w-4 h-4 text-brand-gold group-hover:text-slate-950 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/>
+                </svg>
+                <span>Explore Tasting Menu</span>
+              </a>
+            </div>
+
+            <!-- Trust Indicators Grid / Bar -->
+            <div class="pt-8 border-t border-brand-dark-border/80 w-full grid grid-cols-2 sm:grid-cols-3 gap-6 text-left">
+              <div class="flex items-center gap-3">
+                <div class="p-2.5 rounded-lg bg-brand-dark-card border border-brand-dark-border text-brand-gold">
+                  <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                </div>
+                <div>
+                  <div class="font-serif font-bold text-slate-100 text-lg">3 Stars</div>
+                  <div class="text-xs text-slate-400 font-sans">Michelin Guide</div>
+                </div>
+              </div>
+
+              <div class="flex items-center gap-3">
+                <div class="p-2.5 rounded-lg bg-brand-dark-card border border-brand-dark-border text-brand-gold">
+                  <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                </div>
+                <div>
+                  <div class="font-serif font-bold text-slate-100 text-lg">4.9 / 5.0</div>
+                  <div class="text-xs text-slate-400 font-sans">2,500+ Guest Reviews</div>
+                </div>
+              </div>
+
+              <div class="col-span-2 sm:col-span-1 flex items-center gap-3">
+                <div class="p-2.5 rounded-lg bg-brand-dark-card border border-brand-dark-border text-brand-gold">
+                  <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                </div>
+                <div>
+                  <div class="font-serif font-bold text-slate-100 text-lg">25+ Years</div>
+                  <div class="text-xs text-slate-400 font-sans">Culinary Distinction</div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Hero Visual Composition Area (Right Column - 5 cols on lg) -->
+          <div class="lg:col-span-5 relative" data-aos="fade-left">
+            <div class="relative mx-auto max-w-md lg:max-w-none">
+              
+              <!-- Primary Featured Dish Card -->
+              <div class="relative z-10 rounded-2xl p-2 bg-gradient-to-b from-brand-gold/40 via-brand-dark-border to-brand-dark-border shadow-2xl shadow-gold-glow/20">
+                <div class="relative rounded-xl overflow-hidden aspect-[4/3] sm:aspect-[4/3] bg-brand-dark-card">
+                  <img 
+                    src="https://images.unsplash.com/photo-1559339352-11d035aa65de?auto=format&fit=crop&w=1200&q=85" 
+                    alt="L'Étoile Signature Truffle & Wagyu Culinary Creation" 
+                    class="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
+                    fetchpriority="high"
+                    loading="eager"
+                  />
+                  <div class="absolute inset-0 bg-gradient-to-t from-brand-dark via-transparent to-transparent opacity-80"></div>
+                  
+                  <!-- Image Overlay Caption -->
+                  <div class="absolute bottom-4 left-4 right-4 p-3 rounded-lg bg-brand-dark-card/90 backdrop-blur-md border border-brand-dark-border flex items-center justify-between">
+                    <div>
+                      <p class="font-serif font-bold text-sm text-slate-100">A5 Wagyu & Black Truffle</p>
+                      <p class="text-xs text-brand-gold font-sans">Spring 2026 Tasting Menu Highlight</p>
+                    </div>
+                    <span class="text-xs font-bold text-brand-gold px-2.5 py-1 rounded bg-brand-gold/10 border border-brand-gold/30 font-sans">
+                      Signature
+                    </span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Secondary Floating Badge Card (Bottom Left Offset) -->
+              <div class="absolute -bottom-6 -left-6 z-20 hidden sm:flex items-center gap-3.5 p-4 rounded-xl bg-brand-dark-card/95 border border-brand-gold/40 shadow-dark-card backdrop-blur-md max-w-xs">
+                <div class="w-10 h-10 rounded-full bg-brand-gold/10 border border-brand-gold/40 flex items-center justify-center shrink-0 text-brand-gold">
+                  <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"/></svg>
+                </div>
+                <div>
+                  <p class="font-serif text-sm font-bold text-slate-100">Master Sommelier Pairing</p>
+                  <p class="text-[11px] text-slate-400 font-sans">Curated Cellar Selection</p>
+                </div>
+              </div>
+
+              <!-- Decorative Ambient Gold Ring behind Image -->
+              <div class="absolute -top-6 -right-6 w-full h-full border-2 border-brand-gold/20 rounded-2xl pointer-events-none -z-10 hidden sm:block"></div>
+
+            </div>
+          </div>
+
         </div>
       </div>
     </section>
 
-    <!-- Story & Philosophy Section -->
-    <section class="py-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-        <!-- Visuals -->
-        <div class="relative" data-aos="fade-right">
-          <div class="relative z-10 rounded-2xl overflow-hidden shadow-2xl border border-brand-dark-border">
-            <img src="https://images.unsplash.com/photo-1577219491135-ce391730fb2c?auto=format&fit=crop&w=1000&q=80" alt="Master Chef Preparing Dish" class="w-full h-auto object-cover" />
+    <!-- Story & Philosophy (About) Section -->
+    <section id="about" class="py-24 lg:py-32 relative bg-brand-dark overflow-hidden border-b border-brand-dark-border/60" aria-labelledby="about-heading">
+      <!-- Ambient Radial Lighting Background Effects -->
+      <div class="absolute top-1/2 left-0 -translate-y-1/2 w-96 h-96 bg-brand-gold/5 rounded-full filter blur-3xl pointer-events-none"></div>
+      <div class="absolute bottom-0 right-0 w-80 h-80 bg-brand-gold/5 rounded-full filter blur-3xl pointer-events-none"></div>
+
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        
+        <!-- Part 1: Top Narrative & Multi-Image Showcase -->
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center mb-20">
+          
+          <!-- Image Composition (Left Column - 6 cols on lg) -->
+          <div class="lg:col-span-6 relative" data-aos="fade-right">
+            <div class="relative mx-auto max-w-md lg:max-w-none">
+              
+              <!-- Primary Main Photography Frame -->
+              <div class="relative rounded-2xl overflow-hidden shadow-2xl border border-brand-dark-border/80 group">
+                <img 
+                  src="https://images.unsplash.com/photo-1577219491135-ce391730fb2c?auto=format&fit=crop&w=1000&q=85" 
+                  alt="Master Chef Antoine Laurent Artfully Plating Fine Dining Creation" 
+                  class="w-full h-[420px] sm:h-[480px] object-cover object-center group-hover:scale-105 transition-transform duration-700"
+                  loading="lazy"
+                />
+                <div class="absolute inset-0 bg-gradient-to-t from-brand-dark/80 via-transparent to-transparent"></div>
+                
+                <div class="absolute bottom-6 left-6 right-6">
+                  <span class="text-xs font-semibold uppercase tracking-widest text-brand-gold font-sans block mb-1">Culinary Leadership</span>
+                  <p class="font-serif text-xl font-bold text-slate-100">Master Chef Antoine Laurent</p>
+                </div>
+              </div>
+
+              <!-- Secondary Overlapping Image (Bottom Right Offset) -->
+              <div class="absolute -bottom-10 -right-4 sm:-right-8 w-48 sm:w-60 rounded-xl overflow-hidden border-2 border-brand-gold/40 shadow-dark-card hidden sm:block">
+                <img 
+                  src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=600&q=85" 
+                  alt="L'Étoile Luxury Ambient Dining Room Interior" 
+                  class="w-full h-36 sm:h-44 object-cover"
+                  loading="lazy"
+                />
+              </div>
+
+              <!-- Floating Distinction Heritage Badge -->
+              <div class="absolute -top-6 -left-4 sm:-left-6 bg-brand-dark-card border border-brand-gold/40 p-4 rounded-xl shadow-gold-glow flex items-center gap-3.5 backdrop-blur-md">
+                <div class="w-10 h-10 rounded-full bg-brand-gold/10 border border-brand-gold/40 flex items-center justify-center text-brand-gold shrink-0">
+                  <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v13m0-13V6a2 2 0 112 2h-2zm0 0V6a2 2 0 10-2 2h2zm0 13C10.832 18.477 9.246 18 7.5 18S4.168 18.477 3 19.253V6.253C4.168 5.477 5.754 5 7.5 5s3.332.477 4.5 1.253m0 13C13.168 18.477 14.754 18 16.5 18c1.747 0 3.332.477 4.5 1.253V6.253C19.832 5.477 18.247 5 16.5 5c-1.746 0-3.332.477-4.5 1.253"/></svg>
+                </div>
+                <div>
+                  <div class="font-serif font-bold text-slate-100 text-sm">Est. 1998</div>
+                  <div class="text-[11px] text-slate-400 font-sans">28 Years of Mastery</div>
+                </div>
+              </div>
+
+            </div>
           </div>
-          <div class="absolute -bottom-8 -right-6 z-20 hidden sm:block bg-brand-dark-card border border-brand-gold/40 p-6 rounded-2xl shadow-gold-glow max-w-xs">
-            <p class="font-serif text-3xl font-bold text-brand-gold mb-1">12+ Years</p>
-            <p class="text-xs text-slate-300">Of continuous Michelin star culinary distinction & guest devotion.</p>
+
+          <!-- Story Narrative Content (Right Column - 6 cols on lg) -->
+          <div class="lg:col-span-6 flex flex-col justify-center" data-aos="fade-left">
+            <span class="section-tag">
+              <span class="w-6 h-0.5 bg-brand-gold"></span>
+              Our Heritage & Philosophy
+            </span>
+            
+            <h2 id="about-heading" class="font-serif fluid-section-title font-bold text-slate-100 mb-6 leading-tight">
+              A Harmony of French Heritage & <span class="text-transparent bg-clip-text bg-gold-gradient">Modern Artistry</span>
+            </h2>
+
+            <p class="text-slate-300 leading-relaxed mb-6 font-light">
+              Founded in 1998 by Chef Antoine Laurent in the heart of Paris before expanding to our flagship dining room, <strong class="text-slate-100 font-medium">L'Étoile</strong> was born from a singular obsession: elevating gastronomy into an emotional experience.
+            </p>
+
+            <p class="text-slate-300 leading-relaxed mb-8 font-light">
+              Our kitchen operates as a sanctuary of precision. Every morning, organic seasonal produce arrives directly from private artisanal farms, while wild-caught seafood and prime cuts are selected with unyielding rigor. We honor classic French techniques while embracing bold, contemporary flavor profiles.
+            </p>
+
+            <!-- Signature Philosophy Highlight Box -->
+            <div class="p-6 rounded-xl bg-brand-dark-card border border-brand-dark-border mb-8 relative">
+              <div class="absolute -top-3 left-6 px-3 py-0.5 bg-brand-gold/10 border border-brand-gold/30 rounded text-[10px] uppercase font-bold tracking-widest text-brand-gold">
+                Chef's Credo
+              </div>
+              <p class="font-serif italic text-slate-200 text-base leading-relaxed mb-3 pt-1">
+                "Fine dining is not merely about sustenance; it is a sacred dialogue between nature’s bounty, human technique, and genuine hospitality."
+              </p>
+              <div class="flex items-center justify-between">
+                <span class="text-xs font-semibold text-brand-gold font-sans">— Chef Antoine Laurent</span>
+                <span class="font-accent italic text-brand-gold text-lg">Antoine Laurent</span>
+              </div>
+            </div>
+
+            <!-- Optional Learn More / Story CTA -->
+            <div class="flex items-center gap-4">
+              <a href="about.html" class="btn-secondary text-xs px-6 py-3 uppercase tracking-wider inline-flex items-center gap-2 group">
+                <span>Read Full Story</span>
+                <svg class="w-4 h-4 text-brand-gold group-hover:text-slate-950 group-hover:translate-x-1 transition-all" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+              </a>
+            </div>
+
           </div>
+
         </div>
 
-        <!-- Text Content -->
-        <div data-aos="fade-left">
-          <span class="section-tag">
-            <span class="w-6 h-0.5 bg-brand-gold"></span>
-            Our Philosophy
-          </span>
-          <h2 class="font-serif fluid-section-title font-bold text-slate-100 mb-6">
-            A Symphony of Taste, Elegance & Craftsmanship
-          </h2>
-          <p class="text-slate-300 leading-relaxed mb-6">
-            Founded in 2014, L'Étoile was conceived as a sanctuary for discerning food connoisseurs. Our culinary ethos centers on respecting the integrity of raw, seasonal ingredients while introducing modern techniques.
-          </p>
-          <p class="text-slate-300 leading-relaxed mb-8">
-            Every dish is meticulously paired with vintage wines selected by our master sommelier, ensuring your dining experience transcends ordinary expectations.
-          </p>
-
-          <div class="grid grid-cols-2 gap-6 pt-4 border-t border-brand-dark-border">
-            <div>
-              <h4 class="font-serif text-2xl font-bold text-brand-gold">Chef Antoine Laurent</h4>
-              <p class="text-xs text-slate-400">Executive Chef & Founder</p>
+        <!-- Part 2: Statistics Grid (Trust Metric Cards) -->
+        <div class="grid grid-cols-2 lg:grid-cols-4 gap-6 pt-12 border-t border-brand-dark-border/80" data-aos="fade-up">
+          
+          <!-- Stat Card 1 -->
+          <div class="p-6 rounded-xl bg-brand-dark-card border border-brand-dark-border hover:border-brand-gold/40 transition-colors shadow-dark-card group">
+            <div class="w-10 h-10 rounded-lg bg-brand-gold/10 border border-brand-gold/30 text-brand-gold flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
             </div>
-            <div>
-              <h4 class="font-serif text-2xl font-bold text-brand-gold">3 Michelin Stars</h4>
-              <p class="text-xs text-slate-400">Awarded 2022-2026</p>
-            </div>
+            <div class="font-serif text-3xl sm:text-4xl font-bold text-slate-100 mb-1 group-hover:text-brand-gold transition-colors">28+</div>
+            <div class="text-sm font-semibold text-slate-200 mb-1 font-sans">Years of Heritage</div>
+            <div class="text-xs text-slate-400 font-light">Continuous culinary excellence since 1998</div>
           </div>
+
+          <!-- Stat Card 2 -->
+          <div class="p-6 rounded-xl bg-brand-dark-card border border-brand-dark-border hover:border-brand-gold/40 transition-colors shadow-dark-card group">
+            <div class="w-10 h-10 rounded-lg bg-brand-gold/10 border border-brand-gold/30 text-brand-gold flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            </div>
+            <div class="font-serif text-3xl sm:text-4xl font-bold text-slate-100 mb-1 group-hover:text-brand-gold transition-colors">3 Stars</div>
+            <div class="text-sm font-semibold text-slate-200 mb-1 font-sans">Michelin Distinction</div>
+            <div class="text-xs text-slate-400 font-light">Awarded consecutively 2020–2026</div>
+          </div>
+
+          <!-- Stat Card 3 -->
+          <div class="p-6 rounded-xl bg-brand-dark-card border border-brand-dark-border hover:border-brand-gold/40 transition-colors shadow-dark-card group">
+            <div class="w-10 h-10 rounded-lg bg-brand-gold/10 border border-brand-gold/30 text-brand-gold flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"/></svg>
+            </div>
+            <div class="font-serif text-3xl sm:text-4xl font-bold text-slate-100 mb-1 group-hover:text-brand-gold transition-colors">100%</div>
+            <div class="text-sm font-semibold text-slate-200 mb-1 font-sans">Organic Sourcing</div>
+            <div class="text-xs text-slate-400 font-light">Artisanal farm-to-table ingredients</div>
+          </div>
+
+          <!-- Stat Card 4 -->
+          <div class="p-6 rounded-xl bg-brand-dark-card border border-brand-dark-border hover:border-brand-gold/40 transition-colors shadow-dark-card group">
+            <div class="w-10 h-10 rounded-lg bg-brand-gold/10 border border-brand-gold/30 text-brand-gold flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/></svg>
+            </div>
+            <div class="font-serif text-3xl sm:text-4xl font-bold text-slate-100 mb-1 group-hover:text-brand-gold transition-colors">50K+</div>
+            <div class="text-sm font-semibold text-slate-200 mb-1 font-sans">Satisfied Guests</div>
+            <div class="text-xs text-slate-400 font-light">Unforgettable dining memories created</div>
+          </div>
+
         </div>
+
       </div>
     </section>
 
-    <!-- Featured Menu Showcase Section -->
-    <section class="py-20 bg-slate-950/60 border-y border-brand-dark-border">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="text-center max-w-2xl mx-auto mb-12" data-aos="fade-up">
-          <span class="section-tag justify-center">
+    <!-- Featured Dishes Showcase Section -->
+    <section id="featured-dishes" class="py-24 bg-slate-950/60 border-y border-brand-dark-border relative overflow-hidden" aria-labelledby="featured-dishes-heading">
+      <!-- Ambient Lighting Effects -->
+      <div class="absolute top-0 right-1/4 w-96 h-96 bg-brand-gold/5 rounded-full filter blur-3xl pointer-events-none"></div>
+
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        
+        <!-- Section Header -->
+        <div class="text-center max-w-2xl mx-auto mb-14" data-aos="fade-up">
+          <span class="section-tag justify-center mb-3">
             <span class="w-6 h-0.5 bg-brand-gold"></span>
-            Seasonal Offerings
+            Seasonal Gastronomy
             <span class="w-6 h-0.5 bg-brand-gold"></span>
           </span>
-          <h2 class="font-serif fluid-section-title font-bold text-slate-100 mb-4">
+          <h2 id="featured-dishes-heading" class="font-serif fluid-section-title font-bold text-slate-100 mb-4 leading-tight">
             Curated Culinary Highlights
           </h2>
-          <p class="text-slate-300 text-sm">Select a category below to preview our signature dishes.</p>
+          <p class="fluid-subtitle text-slate-300 font-light leading-relaxed">
+            Discover Master Chef Antoine Laurent's signature seasonal creations, artfully balanced with vintage wine pairings.
+          </p>
         </div>
 
         <!-- Filter Category Tabs -->
-        <div id="home-menu-tabs" class="flex flex-wrap items-center justify-center gap-3 mb-12" data-aos="fade-up">
-          <button data-category="starters" class="tab-btn px-6 py-2.5 rounded-full text-sm font-semibold bg-brand-gold text-slate-950 transition-all duration-300">
+        <div id="home-menu-tabs" class="flex flex-wrap items-center justify-center gap-3 mb-12" data-aos="fade-up" role="tablist" aria-label="Dish Categories">
+          <button data-category="starters" role="tab" aria-selected="true" class="tab-btn px-6 py-2.5 rounded-full text-xs font-semibold uppercase tracking-wider bg-brand-gold text-slate-950 shadow-gold-glow transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-brand-gold">
             Starters
           </button>
-          <button data-category="mains" class="tab-btn px-6 py-2.5 rounded-full text-sm font-semibold bg-brand-dark-card border border-brand-dark-border text-slate-300 hover:text-brand-gold transition-all duration-300">
+          <button data-category="mains" role="tab" aria-selected="false" class="tab-btn px-6 py-2.5 rounded-full text-xs font-semibold uppercase tracking-wider bg-brand-dark-card border border-brand-dark-border text-slate-300 hover:text-brand-gold hover:border-brand-gold/40 transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-brand-gold">
             Main Entrees
           </button>
-          <button data-category="desserts" class="tab-btn px-6 py-2.5 rounded-full text-sm font-semibold bg-brand-dark-card border border-brand-dark-border text-slate-300 hover:text-brand-gold transition-all duration-300">
+          <button data-category="desserts" role="tab" aria-selected="false" class="tab-btn px-6 py-2.5 rounded-full text-xs font-semibold uppercase tracking-wider bg-brand-dark-card border border-brand-dark-border text-slate-300 hover:text-brand-gold hover:border-brand-gold/40 transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-brand-gold">
             Desserts
           </button>
-          <button data-category="cocktails" class="tab-btn px-6 py-2.5 rounded-full text-sm font-semibold bg-brand-dark-card border border-brand-dark-border text-slate-300 hover:text-brand-gold transition-all duration-300">
+          <button data-category="cocktails" role="tab" aria-selected="false" class="tab-btn px-6 py-2.5 rounded-full text-xs font-semibold uppercase tracking-wider bg-brand-dark-card border border-brand-dark-border text-slate-300 hover:text-brand-gold hover:border-brand-gold/40 transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-brand-gold">
             Signature Cocktails
           </button>
         </div>
 
-        <!-- Dynamic Food Grid -->
+        <!-- Dynamic Food Cards Grid (Hydrated by home.js & pre-rendered for SEO fallback) -->
         <div id="featured-menu-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" data-aos="fade-up">
-          <!-- Hydrated by JS -->
+          
+          <!-- Sample Card 1: Foie Gras Poêlé -->
+          <article class="food-card cursor-pointer group" data-dish-id="dish-1">
+            <div class="relative overflow-hidden aspect-[4/3] bg-slate-900">
+              <img 
+                src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=800&q=85" 
+                alt="Pan-Seared Duck Foie Gras" 
+                loading="lazy" 
+                width="400" 
+                height="300"
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 ease-out"
+              />
+              <div class="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent opacity-60"></div>
+              <div class="absolute top-3 left-3 flex flex-wrap gap-1 z-10">
+                <span class="px-2.5 py-1 text-[10px] font-bold uppercase tracking-wider bg-brand-gold/90 text-slate-950 rounded-full shadow-sm">Chef's Special</span>
+              </div>
+              <div class="absolute bottom-3 right-3 z-10">
+                <span class="px-3 py-1 bg-slate-950/90 border border-brand-gold/40 backdrop-blur-md rounded-full text-sm font-bold text-brand-gold font-serif">
+                  $42.00
+                </span>
+              </div>
+            </div>
+            <div class="p-5 flex-1 flex flex-col justify-between">
+              <div>
+                <h3 class="font-serif text-xl font-bold text-slate-100 group-hover:text-brand-gold transition-colors duration-200 mb-2">
+                  Pan-Seared Duck Foie Gras
+                </h3>
+                <p class="text-sm text-slate-400 line-clamp-2 leading-relaxed mb-4">
+                  Caramelized fig reduction, toasted brioche crumble, and aged balsamic glaze.
+                </p>
+              </div>
+              <div class="pt-3 border-t border-brand-dark-border/60 flex items-center justify-between">
+                <span class="text-xs px-2 py-0.5 rounded bg-amber-950/80 border border-amber-500/30 text-amber-300 font-medium">GF</span>
+                <span class="inline-flex items-center gap-1 text-xs font-semibold text-brand-gold group-hover:translate-x-1 transition-transform duration-200">
+                  View Details & Pairings
+                  <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+                </span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Sample Card 2: Hokkaido Scallops Crudo -->
+          <article class="food-card cursor-pointer group" data-dish-id="dish-2">
+            <div class="relative overflow-hidden aspect-[4/3] bg-slate-900">
+              <img 
+                src="https://images.unsplash.com/photo-1534422298391-e4f8c172dddb?auto=format&fit=crop&w=800&q=85" 
+                alt="Hokkaido Scallop Crudo" 
+                loading="lazy" 
+                width="400" 
+                height="300"
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 ease-out"
+              />
+              <div class="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent opacity-60"></div>
+              <div class="absolute top-3 left-3 flex flex-wrap gap-1 z-10">
+                <span class="px-2.5 py-1 text-[10px] font-bold uppercase tracking-wider bg-amber-500/90 text-slate-950 rounded-full shadow-sm">Popular</span>
+              </div>
+              <div class="absolute bottom-3 right-3 z-10">
+                <span class="px-3 py-1 bg-slate-950/90 border border-brand-gold/40 backdrop-blur-md rounded-full text-sm font-bold text-brand-gold font-serif">
+                  $38.00
+                </span>
+              </div>
+            </div>
+            <div class="p-5 flex-1 flex flex-col justify-between">
+              <div>
+                <h3 class="font-serif text-xl font-bold text-slate-100 group-hover:text-brand-gold transition-colors duration-200 mb-2">
+                  Hokkaido Scallop Crudo
+                </h3>
+                <p class="text-sm text-slate-400 line-clamp-2 leading-relaxed mb-4">
+                  Thinly sliced wild scallops with Yuzu pearls, finger lime, and white truffle oil emulsion.
+                </p>
+              </div>
+              <div class="pt-3 border-t border-brand-dark-border/60 flex items-center justify-between">
+                <span class="text-xs px-2 py-0.5 rounded bg-emerald-950/80 border border-emerald-500/30 text-emerald-300 font-medium">GF</span>
+                <span class="inline-flex items-center gap-1 text-xs font-semibold text-brand-gold group-hover:translate-x-1 transition-transform duration-200">
+                  View Details & Pairings
+                  <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+                </span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Sample Card 3: Black Truffle Risotto -->
+          <article class="food-card cursor-pointer group" data-dish-id="dish-3">
+            <div class="relative overflow-hidden aspect-[4/3] bg-slate-900">
+              <img 
+                src="https://images.unsplash.com/photo-1633964913295-ceb43826e7c9?auto=format&fit=crop&w=800&q=85" 
+                alt="Perigord Black Truffle Risotto" 
+                loading="lazy" 
+                width="400" 
+                height="300"
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 ease-out"
+              />
+              <div class="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent opacity-60"></div>
+              <div class="absolute top-3 left-3 flex flex-wrap gap-1 z-10">
+                <span class="px-2.5 py-1 text-[10px] font-bold uppercase tracking-wider bg-brand-gold/90 text-slate-950 rounded-full shadow-sm">Chef's Special</span>
+              </div>
+              <div class="absolute bottom-3 right-3 z-10">
+                <span class="px-3 py-1 bg-slate-950/90 border border-brand-gold/40 backdrop-blur-md rounded-full text-sm font-bold text-brand-gold font-serif">
+                  $48.00
+                </span>
+              </div>
+            </div>
+            <div class="p-5 flex-1 flex flex-col justify-between">
+              <div>
+                <h3 class="font-serif text-xl font-bold text-slate-100 group-hover:text-brand-gold transition-colors duration-200 mb-2">
+                  Perigord Black Truffle Risotto
+                </h3>
+                <p class="text-sm text-slate-400 line-clamp-2 leading-relaxed mb-4">
+                  Acquerello carnaroli rice, 36-month aged Parmigiano Reggiano, shaved winter truffles.
+                </p>
+              </div>
+              <div class="pt-3 border-t border-brand-dark-border/60 flex items-center justify-between">
+                <span class="text-xs px-2 py-0.5 rounded bg-emerald-950/80 border border-emerald-500/30 text-emerald-300 font-medium">Vegetarian</span>
+                <span class="inline-flex items-center gap-1 text-xs font-semibold text-brand-gold group-hover:translate-x-1 transition-transform duration-200">
+                  View Details & Pairings
+                  <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+                </span>
+              </div>
+            </div>
+          </article>
+
         </div>
 
-        <div class="text-center mt-12">
-          <a href="menu.html" class="btn-secondary px-8 py-3.5">
-            View Complete Culinary Menu &rarr;
+        <!-- Bottom Call to Action -->
+        <div class="text-center mt-14">
+          <a href="menu.html" class="btn-primary px-9 py-4 text-xs uppercase tracking-widest inline-flex items-center gap-3 group">
+            <span>Explore Complete Culinary Menu</span>
+            <svg class="w-4 h-4 text-slate-950 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
           </a>
         </div>
+
       </div>
     </section>
 
