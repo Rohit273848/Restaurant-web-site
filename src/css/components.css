@@ -1,0 +1,69 @@
+@layer components {
+  /* Button Abstractions */
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2 px-7 py-3.5 bg-brand-gold text-slate-950 font-semibold rounded-md tracking-wide shadow-gold-glow hover:bg-brand-gold-dark hover:shadow-lg transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-brand-gold focus:ring-offset-2 focus:ring-offset-slate-950 disabled:opacity-50 disabled:cursor-not-allowed;
+  }
+
+  .btn-secondary {
+    @apply inline-flex items-center justify-center gap-2 px-7 py-3.5 bg-transparent border-2 border-brand-gold text-brand-gold font-semibold rounded-md tracking-wide hover:bg-brand-gold hover:text-slate-950 transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-brand-gold focus:ring-offset-2 focus:ring-offset-slate-950 disabled:opacity-50 disabled:cursor-not-allowed;
+  }
+
+  .btn-outline-white {
+    @apply inline-flex items-center justify-center gap-2 px-7 py-3.5 bg-transparent border-2 border-white/30 text-white font-medium rounded-md hover:bg-white/10 hover:border-white transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-slate-950;
+  }
+
+  .btn-icon {
+    @apply inline-flex items-center justify-center p-3 rounded-full bg-brand-dark-card border border-brand-dark-border text-brand-gold hover:bg-brand-gold hover:text-slate-950 transition-all duration-300;
+  }
+
+  /* Card Components */
+  .food-card {
+    @apply bg-brand-dark-card border border-brand-dark-border rounded-xl overflow-hidden shadow-dark-card hover:border-brand-gold transition-all duration-300 flex flex-col;
+  }
+
+  /* Section Dividers & Headlines */
+  .section-tag {
+    @apply inline-flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-brand-gold mb-3;
+  }
+
+  .gold-divider {
+    @apply w-16 h-0.5 bg-gold-gradient my-4 mx-auto rounded-full;
+  }
+
+  /* Input & Form Controls */
+  .form-input {
+    @apply w-full px-4 py-3 bg-brand-dark border border-brand-dark-border text-slate-100 placeholder-slate-500 rounded-lg focus:outline-none focus:border-brand-gold focus:ring-1 focus:ring-brand-gold transition-all duration-200;
+  }
+
+  .form-select {
+    @apply w-full px-4 py-3 bg-brand-dark border border-brand-dark-border text-slate-100 rounded-lg focus:outline-none focus:border-brand-gold focus:ring-1 focus:ring-brand-gold transition-all duration-200 cursor-pointer;
+  }
+
+  .form-label {
+    @apply block text-sm font-medium text-slate-300 mb-2;
+  }
+
+  /* Modal Backdrop */
+  .modal-backdrop {
+    @apply fixed inset-0 bg-slate-950/80 backdrop-blur-sm z-50 flex items-center justify-center p-4 opacity-0 pointer-events-none transition-opacity duration-300;
+  }
+
+  .modal-backdrop.active {
+    @apply opacity-100 pointer-events-auto;
+  }
+}
+
+/* Custom Swiper Pagination Overrides */
+.swiper-pagination-bullet {
+  background: rgba(197, 168, 128, 0.4) !important;
+  opacity: 1 !important;
+  width: 10px !important;
+  height: 10px !important;
+  transition: all 0.3s ease !important;
+}
+
+.swiper-pagination-bullet-active {
+  background: #C5A880 !important;
+  width: 28px !important;
+  border-radius: 6px !important;
+}

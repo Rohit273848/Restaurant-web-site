@@ -1,0 +1,28 @@
+/* Google Fonts Import */
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,900;1,400;1,600&display=swap');
+
+:root {
+  --color-primary: #C5A880;
+  --color-primary-dark: #A88B63;
+  --color-primary-light: #E2D1B9;
+  --color-bg-dark: #0B0F17;
+  --color-card-dark: #131924;
+  --color-border-dark: #1F293D;
+  --color-bg-cream: #FAF7F2;
+  --color-accent: #D4AF37;
+}
+
+/* Fluid Typography Utilities */
+.fluid-hero-title {
+  font-size: clamp(2.5rem, 5vw + 1rem, 5rem);
+  line-height: 1.1;
+}
+
+.fluid-section-title {
+  font-size: clamp(1.875rem, 3.5vw + 0.5rem, 3.25rem);
+  line-height: 1.2;
+}
+
+.fluid-subtitle {
+  font-size: clamp(1rem, 1.5vw + 0.5rem, 1.25rem);
+}

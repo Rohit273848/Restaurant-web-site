@@ -1,0 +1,110 @@
+{
+  "categories": [
+    { "id": "starters", "name": "Starters & Appetizers", "description": "Delicate small plates crafted to stimulate your appetite." },
+    { "id": "mains", "name": "Chef's Entrées", "description": "Masterfully prepared land and sea selections served with seasonal accompaniments." },
+    { "id": "desserts", "name": "Pastry & Sweets", "description": "Decadent handcrafted desserts created by our Master Pastry Chef." },
+    { "id": "cocktails", "name": "Signature Drinks", "description": "Artisanal cocktails and curated fine wine reserve." }
+  ],
+  "items": [
+    {
+      "id": "dish-01",
+      "categoryId": "starters",
+      "title": "Truffle Infused Burrata",
+      "description": "Fresh Italian burrata with black winter truffle, heirloom tomatoes, basil oil, and grilled sourdough.",
+      "price": 24.00,
+      "image": "https://images.unsplash.com/photo-1592417817098-8f3d6eb231fc?auto=format&fit=crop&w=800&q=80",
+      "tags": ["popular", "chef-special"],
+      "dietary": { "isVegetarian": true, "isGlutenFree": false, "isVegan": false, "containsNuts": false }
+    },
+    {
+      "id": "dish-02",
+      "categoryId": "starters",
+      "title": "Hokkaido Scallop Crudo",
+      "description": "Thinly sliced wild scallops with yuzu kosho vinaigrette, pickled radish, and micro cilantro.",
+      "price": 28.00,
+      "image": "https://images.unsplash.com/photo-1534422298391-e4f8c172dddb?auto=format&fit=crop&w=800&q=80",
+      "tags": ["chef-special"],
+      "dietary": { "isVegetarian": false, "isGlutenFree": true, "isVegan": false, "containsNuts": false }
+    },
+    {
+      "id": "dish-03",
+      "categoryId": "starters",
+      "title": "Wild Mushroom Velouté",
+      "description": "Velvety forest mushroom soup topped with crispy shallots and aged parmesan foam.",
+      "price": 22.00,
+      "image": "https://images.unsplash.com/photo-1547592166-23ac45744acd?auto=format&fit=crop&w=800&q=80",
+      "tags": [],
+      "dietary": { "isVegetarian": true, "isGlutenFree": true, "isVegan": false, "containsNuts": false }
+    },
+    {
+      "id": "dish-04",
+      "categoryId": "mains",
+      "title": "Pan-Seared Wagyu Filet Mignon",
+      "description": "A5 Japanese Wagyu served with caramelized shallot puree, bone marrow jus, and smoked potato galette.",
+      "price": 78.00,
+      "image": "https://images.unsplash.com/photo-1558030006-450675393462?auto=format&fit=crop&w=800&q=80",
+      "tags": ["popular", "chef-special"],
+      "dietary": { "isVegetarian": false, "isGlutenFree": true, "isVegan": false, "containsNuts": false }
+    },
+    {
+      "id": "dish-05",
+      "categoryId": "mains",
+      "title": "Chilean Sea Bass en Papillote",
+      "description": "Oven-baked sea bass in parchment paper with lemongrass emulsion, baby bok choy, and ginger glaze.",
+      "price": 54.00,
+      "image": "https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?auto=format&fit=crop&w=800&q=80",
+      "tags": ["chef-special"],
+      "dietary": { "isVegetarian": false, "isGlutenFree": true, "isVegan": false, "containsNuts": false }
+    },
+    {
+      "id": "dish-06",
+      "categoryId": "mains",
+      "title": "Saffron Risotto ai Funghi",
+      "description": "Acquerello carnaroli rice slow-cooked with Iranian saffron, wild chanterelles, and vegan parmesan crumble.",
+      "price": 38.00,
+      "image": "https://images.unsplash.com/photo-1633964913295-ceb43826e7c9?auto=format&fit=crop&w=800&q=80",
+      "tags": ["popular"],
+      "dietary": { "isVegetarian": true, "isGlutenFree": true, "isVegan": true, "containsNuts": false }
+    },
+    {
+      "id": "dish-07",
+      "categoryId": "desserts",
+      "title": "Valrhona Chocolate Soufflé",
+      "description": "Warm 70% dark chocolate soufflé accompanied by Madagascar bourbon vanilla bean ice cream.",
+      "price": 20.00,
+      "image": "https://images.unsplash.com/photo-1606313564200-e75d5e30476c?auto=format&fit=crop&w=800&q=80",
+      "tags": ["popular"],
+      "dietary": { "isVegetarian": true, "isGlutenFree": false, "isVegan": false, "containsNuts": false }
+    },
+    {
+      "id": "dish-08",
+      "categoryId": "desserts",
+      "title": "Deconstructed Meyer Lemon Tart",
+      "description": "Lemon curd spheres, toasted Italian meringue, sable crumble, and fresh raspberry coulis.",
+      "price": 18.00,
+      "image": "https://images.unsplash.com/photo-1587314168485-3236d6710814?auto=format&fit=crop&w=800&q=80",
+      "tags": ["chef-special"],
+      "dietary": { "isVegetarian": true, "isGlutenFree": false, "isVegan": false, "containsNuts": true }
+    },
+    {
+      "id": "dish-09",
+      "categoryId": "cocktails",
+      "title": "Smoked Old Fashioned",
+      "description": "WhistlePig Rye Whisky, Angostura bitters, organic maple syrup, infused with cherry wood smoke.",
+      "price": 22.00,
+      "image": "https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?auto=format&fit=crop&w=800&q=80",
+      "tags": ["popular"],
+      "dietary": { "isVegetarian": true, "isGlutenFree": true, "isVegan": true, "containsNuts": false }
+    },
+    {
+      "id": "dish-10",
+      "categoryId": "cocktails",
+      "title": "Botanical Rose Spritz",
+      "description": "Empress 1908 Gin, elderflower liqueur, sparkling prosecco, pressed lemon juice, and rose petal infusion.",
+      "price": 19.00,
+      "image": "https://images.unsplash.com/photo-1551024709-8f23befc6f87?auto=format&fit=crop&w=800&q=80",
+      "tags": [],
+      "dietary": { "isVegetarian": true, "isGlutenFree": true, "isVegan": true, "containsNuts": false }
+    }
+  ]
+}

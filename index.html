@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en" class="dark scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>L'Étoile | Modern Culinary Artistry & Fine Dining</title>
+  <meta name="description" content="Experience Michelin-starred culinary artistry at L'Étoile. Handcrafted seasonal dishes, artisanal cocktails, and an unforgettable fine dining atmosphere." />
+  <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+  
+  <!-- Swiper CSS & AOS Animation CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  
+  <!-- Tailwind & Core Styles -->
+  <link rel="stylesheet" href="/src/css/tailwind.css" />
+</head>
+<body class="bg-brand-dark text-slate-100 antialiased selection:bg-brand-gold selection:text-slate-950 flex flex-col min-h-screen">
+  <div id="home-page-identifier" class="hidden"></div>
+
+  <!-- Header Navigation -->
+  <header id="site-header" class="fixed top-0 left-0 right-0 z-40 transition-all duration-300 py-5">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
+      <!-- Brand Logo -->
+      <a href="index.html" class="flex items-center gap-3 group">
+        <div class="w-10 h-10 rounded-full bg-gold-gradient p-0.5 flex items-center justify-center shadow-gold-glow">
+          <div class="w-full h-full bg-brand-dark rounded-full flex items-center justify-center">
+            <span class="font-serif font-bold text-brand-gold text-xl group-hover:scale-110 transition-transform">É</span>
+          </div>
+        </div>
+        <div class="flex flex-col">
+          <span class="font-serif text-2xl font-bold tracking-wider text-slate-100 brand-name-text">L'Étoile</span>
+          <span class="text-[10px] tracking-[0.25em] uppercase text-brand-gold font-medium">Fine Dining</span>
+        </div>
+      </a>
+
+      <!-- Desktop Navbar -->
+      <nav class="hidden lg:flex items-center gap-8">
+        <a href="index.html" class="nav-link text-sm font-medium hover:text-brand-gold transition-colors py-1">Home</a>
+        <a href="about.html" class="nav-link text-sm font-medium text-slate-300 hover:text-brand-gold transition-colors py-1">About Us</a>
+        <a href="menu.html" class="nav-link text-sm font-medium text-slate-300 hover:text-brand-gold transition-colors py-1">Culinary Menu</a>
+        <a href="gallery.html" class="nav-link text-sm font-medium text-slate-300 hover:text-brand-gold transition-colors py-1">Gallery</a>
+        <a href="contact.html" class="nav-link text-sm font-medium text-slate-300 hover:text-brand-gold transition-colors py-1">Contact</a>
+      </nav>
+
+      <!-- Desktop Right CTA -->
+      <div class="hidden lg:flex items-center gap-5">
+        <a href="tel:+15558392001" class="text-xs text-slate-300 hover:text-brand-gold flex items-center gap-1.5 transition-colors font-medium">
+          <svg class="w-4 h-4 text-brand-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+          <span class="brand-phone-text">+1 (555) 839-2001</span>
+        </a>
+        <a href="contact.html" class="btn-primary text-xs py-2.5 px-5">
+          Contact Us
+        </a>
+      </div>
+
+      <!-- Mobile Hamburger Button -->
+      <button id="mobile-menu-toggle" class="lg:hidden p-2.5 rounded-lg bg-brand-dark-card border border-brand-dark-border text-slate-200 hover:text-brand-gold focus:outline-none" aria-label="Open Mobile Menu">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Overlay & Panel -->
+  <div id="mobile-menu-drawer" class="fixed inset-0 z-50 transform translate-x-full pointer-events-none transition-transform duration-300 ease-in-out flex justify-end">
+    <div id="mobile-drawer-overlay" class="absolute inset-0 bg-slate-950/80 backdrop-blur-sm"></div>
+    <div class="relative w-full max-w-sm bg-brand-dark-card border-l border-brand-dark-border h-full p-6 flex flex-col justify-between overflow-y-auto z-10">
+      <div>
+        <div class="flex items-center justify-between pb-6 border-b border-brand-dark-border mb-6">
+          <span class="font-serif text-2xl font-bold text-slate-100 brand-name-text">L'Étoile</span>
+          <button id="mobile-drawer-close" class="p-2 text-slate-400 hover:text-white" aria-label="Close Mobile Menu">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+          </button>
+        </div>
+        <nav class="flex flex-col gap-4">
+          <a href="index.html" class="nav-link text-lg font-medium text-brand-gold py-2 border-b border-brand-dark-border/40">Home</a>
+          <a href="about.html" class="nav-link text-lg font-medium text-slate-200 hover:text-brand-gold py-2 border-b border-brand-dark-border/40">About Us</a>
+          <a href="menu.html" class="nav-link text-lg font-medium text-slate-200 hover:text-brand-gold py-2 border-b border-brand-dark-border/40">Culinary Menu</a>
+          <a href="gallery.html" class="nav-link text-lg font-medium text-slate-200 hover:text-brand-gold py-2 border-b border-brand-dark-border/40">Gallery</a>
+          <a href="contact.html" class="nav-link text-lg font-medium text-slate-200 hover:text-brand-gold py-2 border-b border-brand-dark-border/40">Contact</a>
+        </nav>
+      </div>
+
+      <div class="pt-6 border-t border-brand-dark-border space-y-4">
+        <a href="tel:+15558392001" class="text-sm text-slate-300 flex items-center gap-2">
+          <svg class="w-4 h-4 text-brand-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+          <span class="brand-phone-text">+1 (555) 839-2001</span>
+        </a>
+        <a href="contact.html" class="btn-primary w-full text-center">
+          Contact Us
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Content -->
+  <main class="flex-grow">
+    <!-- Hero Section -->
+    <section class="relative min-h-screen flex items-center justify-center pt-24 pb-16 overflow-hidden">
+      <!-- Hero Background Visual -->
+      <div class="absolute inset-0 z-0">
+        <img 
+          src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=2000&q=85" 
+          alt="Fine Dining Atmosphere" 
+          class="w-full h-full object-cover scale-105 filter brightness-50"
+        />
+        <div class="absolute inset-0 bg-gradient-to-t from-brand-dark via-brand-dark/70 to-slate-950/80"></div>
+      </div>
+
+      <div class="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center" data-aos="fade-up">
+        <span class="section-tag justify-center mb-4">
+          <span class="w-8 h-0.5 bg-brand-gold"></span>
+          Michelin Awarded Gastronomy
+          <span class="w-8 h-0.5 bg-brand-gold"></span>
+        </span>
+        
+        <h1 class="font-serif fluid-hero-title font-bold text-slate-100 mb-6 leading-tight">
+          Where Passion Meets <br/><span class="text-transparent bg-clip-text bg-gold-gradient">Culinary Perfection</span>
+        </h1>
+        
+        <p class="fluid-subtitle text-slate-300 max-w-2xl mx-auto mb-10 leading-relaxed font-light">
+          Indulge in an unforgettable epicurean journey of French heritage and contemporary mastery, crafted with hand-picked seasonal ingredients.
+        </p>
+
+        <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+          <a href="menu.html" class="btn-primary w-full sm:w-auto px-9 py-4 text-base">
+            Explore Culinary Menu
+          </a>
+          <a href="contact.html" class="btn-secondary w-full sm:w-auto px-9 py-4 text-base">
+            Contact & Location
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Story & Philosophy Section -->
+    <section class="py-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <!-- Visuals -->
+        <div class="relative" data-aos="fade-right">
+          <div class="relative z-10 rounded-2xl overflow-hidden shadow-2xl border border-brand-dark-border">
+            <img src="https://images.unsplash.com/photo-1577219491135-ce391730fb2c?auto=format&fit=crop&w=1000&q=80" alt="Master Chef Preparing Dish" class="w-full h-auto object-cover" />
+          </div>
+          <div class="absolute -bottom-8 -right-6 z-20 hidden sm:block bg-brand-dark-card border border-brand-gold/40 p-6 rounded-2xl shadow-gold-glow max-w-xs">
+            <p class="font-serif text-3xl font-bold text-brand-gold mb-1">12+ Years</p>
+            <p class="text-xs text-slate-300">Of continuous Michelin star culinary distinction & guest devotion.</p>
+          </div>
+        </div>
+
+        <!-- Text Content -->
+        <div data-aos="fade-left">
+          <span class="section-tag">
+            <span class="w-6 h-0.5 bg-brand-gold"></span>
+            Our Philosophy
+          </span>
+          <h2 class="font-serif fluid-section-title font-bold text-slate-100 mb-6">
+            A Symphony of Taste, Elegance & Craftsmanship
+          </h2>
+          <p class="text-slate-300 leading-relaxed mb-6">
+            Founded in 2014, L'Étoile was conceived as a sanctuary for discerning food connoisseurs. Our culinary ethos centers on respecting the integrity of raw, seasonal ingredients while introducing modern techniques.
+          </p>
+          <p class="text-slate-300 leading-relaxed mb-8">
+            Every dish is meticulously paired with vintage wines selected by our master sommelier, ensuring your dining experience transcends ordinary expectations.
+          </p>
+
+          <div class="grid grid-cols-2 gap-6 pt-4 border-t border-brand-dark-border">
+            <div>
+              <h4 class="font-serif text-2xl font-bold text-brand-gold">Chef Antoine Laurent</h4>
+              <p class="text-xs text-slate-400">Executive Chef & Founder</p>
+            </div>
+            <div>
+              <h4 class="font-serif text-2xl font-bold text-brand-gold">3 Michelin Stars</h4>
+              <p class="text-xs text-slate-400">Awarded 2022-2026</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Menu Showcase Section -->
+    <section class="py-20 bg-slate-950/60 border-y border-brand-dark-border">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center max-w-2xl mx-auto mb-12" data-aos="fade-up">
+          <span class="section-tag justify-center">
+            <span class="w-6 h-0.5 bg-brand-gold"></span>
+            Seasonal Offerings
+            <span class="w-6 h-0.5 bg-brand-gold"></span>
+          </span>
+          <h2 class="font-serif fluid-section-title font-bold text-slate-100 mb-4">
+            Curated Culinary Highlights
+          </h2>
+          <p class="text-slate-300 text-sm">Select a category below to preview our signature dishes.</p>
+        </div>
+
+        <!-- Filter Category Tabs -->
+        <div id="home-menu-tabs" class="flex flex-wrap items-center justify-center gap-3 mb-12" data-aos="fade-up">
+          <button data-category="starters" class="tab-btn px-6 py-2.5 rounded-full text-sm font-semibold bg-brand-gold text-slate-950 transition-all duration-300">
+            Starters
+          </button>
+          <button data-category="mains" class="tab-btn px-6 py-2.5 rounded-full text-sm font-semibold bg-brand-dark-card border border-brand-dark-border text-slate-300 hover:text-brand-gold transition-all duration-300">
+            Main Entrees
+          </button>
+          <button data-category="desserts" class="tab-btn px-6 py-2.5 rounded-full text-sm font-semibold bg-brand-dark-card border border-brand-dark-border text-slate-300 hover:text-brand-gold transition-all duration-300">
+            Desserts
+          </button>
+          <button data-category="cocktails" class="tab-btn px-6 py-2.5 rounded-full text-sm font-semibold bg-brand-dark-card border border-brand-dark-border text-slate-300 hover:text-brand-gold transition-all duration-300">
+            Signature Cocktails
+          </button>
+        </div>
+
+        <!-- Dynamic Food Grid -->
+        <div id="featured-menu-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" data-aos="fade-up">
+          <!-- Hydrated by JS -->
+        </div>
+
+        <div class="text-center mt-12">
+          <a href="menu.html" class="btn-secondary px-8 py-3.5">
+            View Complete Culinary Menu &rarr;
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="py-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-2xl mx-auto mb-16" data-aos="fade-up">
+        <span class="section-tag justify-center">
+          <span class="w-6 h-0.5 bg-brand-gold"></span>
+          Guest Impressions
+          <span class="w-6 h-0.5 bg-brand-gold"></span>
+        </span>
+        <h2 class="font-serif fluid-section-title font-bold text-slate-100 mb-4">
+          Words from Our Guests & Critics
+        </h2>
+      </div>
+
+      <div id="testimonials-swiper" class="swiper pb-14" data-aos="fade-up">
+        <div id="testimonials-wrapper" class="swiper-wrapper">
+          <!-- Hydrated by JS -->
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Universal Footer Component -->
+  <footer class="bg-slate-950 border-t border-brand-dark-border pt-16 pb-8 text-slate-400">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
+      <!-- Brand Bio -->
+      <div>
+        <a href="index.html" class="inline-block mb-4">
+          <span class="font-serif text-2xl font-bold text-slate-100 brand-name-text">L'Étoile</span>
+        </a>
+        <p class="text-sm leading-relaxed mb-6">
+          A high-performance luxury restaurant website designed for culinary elegance and flawless guest experience.
+        </p>
+        <div class="flex items-center gap-3">
+          <a href="#" class="btn-icon" aria-label="Instagram">
+            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+          </a>
+          <a href="#" class="btn-icon" aria-label="Facebook">
+            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M9 8H6v4h3v12h5V12h3.642L18 8h-4V6.333C14 5.374 14.5 5 15.5 5H18V0h-3.808C10.592 0 9 1.583 9 4.615V8z"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- Quick Navigation -->
+      <div>
+        <h4 class="font-serif font-bold text-slate-100 mb-4">Quick Navigation</h4>
+        <ul class="space-y-2 text-sm">
+          <li><a href="index.html" class="hover:text-brand-gold transition-colors">Home</a></li>
+          <li><a href="about.html" class="hover:text-brand-gold transition-colors">About Us</a></li>
+          <li><a href="menu.html" class="hover:text-brand-gold transition-colors">Culinary Menu</a></li>
+          <li><a href="gallery.html" class="hover:text-brand-gold transition-colors">Atmosphere Gallery</a></li>
+          <li><a href="contact.html" class="hover:text-brand-gold transition-colors">Contact Us</a></li>
+        </ul>
+      </div>
+
+      <!-- Hours -->
+      <div>
+        <h4 class="font-serif font-bold text-slate-100 mb-4">Opening Hours</h4>
+        <ul class="space-y-2 text-xs">
+          <li class="flex justify-between py-1 border-b border-brand-dark-border/40">
+            <span>Mon – Thu</span>
+            <span class="text-brand-gold">5:00 PM – 10:30 PM</span>
+          </li>
+          <li class="flex justify-between py-1 border-b border-brand-dark-border/40">
+            <span>Fri – Sat</span>
+            <span class="text-brand-gold">5:00 PM – 11:30 PM</span>
+          </li>
+          <li class="flex justify-between py-1">
+            <span>Sunday</span>
+            <span class="text-brand-gold">4:30 PM – 10:00 PM</span>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Contact Info -->
+      <div>
+        <h4 class="font-serif font-bold text-slate-100 mb-4">Contact Info</h4>
+        <p class="text-xs text-slate-300 leading-relaxed mb-3">
+          742 Evergreen Terrace, Upper East Side,<br/>New York, NY 10021
+        </p>
+        <p class="text-xs text-brand-gold font-bold mb-1 brand-phone-text">+1 (555) 839-2001</p>
+        <p class="text-xs text-slate-400">reservations@letoilerestaurant.com</p>
+      </div>
+    </div>
+
+    <!-- Copyright Bar -->
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-6 border-t border-brand-dark-border/40 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-500">
+      <p>&copy; 2026 L'Étoile Fine Dining. All rights reserved.</p>
+      <div class="flex items-center gap-4 mt-2 sm:mt-0">
+        <a href="privacy-policy.html" class="hover:text-slate-300 transition-colors">Privacy Policy</a>
+        <a href="404.html" class="hover:text-slate-300 transition-colors">404 Error Test</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script type="module" src="/src/js/main.js"></script>
+  <script type="module" src="/src/js/pages/home.js"></script>
+</body>
+</html>

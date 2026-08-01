@@ -1,0 +1,44 @@
+{
+  "brand": {
+    "name": "L'Étoile",
+    "tagline": "Modern Culinary Artistry & Fine Dining",
+    "established": 2014,
+    "currencySymbol": "$",
+    "currencyCode": "USD",
+    "theme": {
+      "primaryColor": "#C5A880",
+      "primaryDark": "#A88B63",
+      "darkBg": "#0B0F17",
+      "accentColor": "#D4AF37"
+    }
+  },
+  "contact": {
+    "phone": "+1 (555) 839-2001",
+    "email": "reservations@letoilerestaurant.com",
+    "address": {
+      "street": "742 Evergreen Terrace",
+      "neighborhood": "Upper East Side",
+      "city": "New York",
+      "state": "NY",
+      "zip": "10021",
+      "country": "USA"
+    },
+    "mapEmbedUrl": "https://maps.google.com/maps?q=New+York+Upper+East+Side&t=&z=13&ie=UTF8&iwloc=&output=embed"
+  },
+  "social": {
+    "instagram": "https://instagram.com",
+    "facebook": "https://facebook.com",
+    "tripadvisor": "https://tripadvisor.com"
+  },
+  "operatingHours": [
+    { "days": "Monday – Thursday", "dinner": "5:00 PM – 10:30 PM", "lunch": "Closed" },
+    { "days": "Friday – Saturday", "dinner": "5:00 PM – 11:30 PM", "lunch": "12:00 PM – 3:00 PM" },
+    { "days": "Sunday", "dinner": "4:30 PM – 10:00 PM", "lunch": "11:30 AM – 3:00 PM" }
+  ],
+  "stats": [
+    { "value": "12+", "label": "Years of Excellence" },
+    { "value": "3", "label": "Michelin Stars" },
+    { "value": "45+", "label": "Artisanal Dishes" },
+    { "value": "98%", "label": "Satisfied Guests" }
+  ]
+}

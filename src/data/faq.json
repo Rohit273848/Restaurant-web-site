@@ -1,0 +1,22 @@
+[
+  {
+    "id": "faq-01",
+    "question": "What is the dress code policy at L'Étoile?",
+    "answer": "We encourage Smart Casual to Elegant attire. We kindly request guests refrain from wearing athletic wear, beachwear, or flip-flops in the main dining room."
+  },
+  {
+    "id": "faq-02",
+    "question": "How far in advance can I make a table reservation?",
+    "answer": "Table reservations open 30 days in advance at midnight EST. For private dining events or large parties exceeding 8 guests, please contact our concierge team directly."
+  },
+  {
+    "id": "faq-03",
+    "question": "Do you accommodate severe food allergies and dietary restrictions?",
+    "answer": "Absolutely. Our culinary team can customize tasting menus for vegan, vegetarian, gluten-free, and nut-sensitive guests. Please notify us during the booking step."
+  },
+  {
+    "id": "faq-04",
+    "question": "Is valet parking available on-site?",
+    "answer": "Yes, complimentary valet parking is offered at our main entrance on Evergreen Terrace from 4:30 PM until closing daily."
+  }
+]

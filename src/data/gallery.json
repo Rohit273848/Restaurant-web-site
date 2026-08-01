@@ -1,0 +1,44 @@
+[
+  {
+    "id": "gal-01",
+    "title": "Main Dining Hall",
+    "category": "interior",
+    "image": "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1200&q=80",
+    "caption": "Elegant ambient lighting with custom velvet seating."
+  },
+  {
+    "id": "gal-02",
+    "title": "Artisanal Plating",
+    "category": "dishes",
+    "image": "https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=1200&q=80",
+    "caption": "Precision craftsmanship in every seasonal entree."
+  },
+  {
+    "id": "gal-03",
+    "title": "Sommelier Reserve Bar",
+    "category": "bar",
+    "image": "https://images.unsplash.com/photo-1572116469696-31de0f17cc34?auto=format&fit=crop&w=1200&q=80",
+    "caption": "Curated selection of over 400 rare vintage wines."
+  },
+  {
+    "id": "gal-04",
+    "title": "Private Executive Dining",
+    "category": "interior",
+    "image": "https://images.unsplash.com/photo-1550966871-3ed3cdb5ed0c?auto=format&fit=crop&w=1200&q=80",
+    "caption": "Secluded private lounge for celebrations and meetings."
+  },
+  {
+    "id": "gal-05",
+    "title": "Mixology in Motion",
+    "category": "bar",
+    "image": "https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?auto=format&fit=crop&w=1200&q=80",
+    "caption": "Handcrafted cocktails smoke-infused at your table."
+  },
+  {
+    "id": "gal-06",
+    "title": "Chef's Kitchen Pass",
+    "category": "events",
+    "image": "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=1200&q=80",
+    "caption": "Live culinary art performance in our open kitchen."
+  }
+]
