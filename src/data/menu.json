@@ -1,110 +1,110 @@
 {
   "categories": [
-    { "id": "starters", "name": "Starters & Appetizers", "description": "Delicate small plates crafted to stimulate your appetite." },
-    { "id": "mains", "name": "Chef's Entrées", "description": "Masterfully prepared land and sea selections served with seasonal accompaniments." },
-    { "id": "desserts", "name": "Pastry & Sweets", "description": "Decadent handcrafted desserts created by our Master Pastry Chef." },
-    { "id": "cocktails", "name": "Signature Drinks", "description": "Artisanal cocktails and curated fine wine reserve." }
+    { "id": "starters", "name": "Indian Starters & Snacks", "description": "Crispy kebabs, tandoori tikka, and sizzling clay oven appetizers." },
+    { "id": "mains", "name": "Royal Main Curries & Thali", "description": "Rich aromatic Indian gravies, slow-cooked lentils, and butter naans." },
+    { "id": "desserts", "name": "Traditional Indian Sweets", "description": "Authentic handcrafted Indian mithai and chilled desserts." },
+    { "id": "cocktails", "name": "Refreshing Beverages & Lassi", "description": "Traditional kulhad lassi, masala taak, and spiced mocktails." }
   ],
   "items": [
     {
       "id": "dish-01",
       "categoryId": "starters",
-      "title": "Truffle Infused Burrata",
-      "description": "Fresh Italian burrata with black winter truffle, heirloom tomatoes, basil oil, and grilled sourdough.",
-      "price": 24.00,
-      "image": "https://images.unsplash.com/photo-1592417817098-8f3d6eb231fc?auto=format&fit=crop&w=800&q=80",
-      "tags": ["popular", "chef-special"],
-      "dietary": { "isVegetarian": true, "isGlutenFree": false, "isVegan": false, "containsNuts": false }
+      "title": "Tandoori Paneer Tikka Angara",
+      "description": "Fresh cottage cheese marinated in spiced hung curd and smoked in clay tandoor with bell peppers.",
+      "price": 280.00,
+      "image": "https://images.unsplash.com/photo-1567188040759-fb8a883dc6d8?auto=format&fit=crop&w=800&q=85",
+      "tags": ["chef-special", "popular"],
+      "dietary": { "isVegetarian": true, "isGlutenFree": true, "isVegan": false, "containsNuts": false }
     },
     {
       "id": "dish-02",
       "categoryId": "starters",
-      "title": "Hokkaido Scallop Crudo",
-      "description": "Thinly sliced wild scallops with yuzu kosho vinaigrette, pickled radish, and micro cilantro.",
-      "price": 28.00,
-      "image": "https://images.unsplash.com/photo-1534422298391-e4f8c172dddb?auto=format&fit=crop&w=800&q=80",
-      "tags": ["chef-special"],
-      "dietary": { "isVegetarian": false, "isGlutenFree": true, "isVegan": false, "containsNuts": false }
+      "title": "Crispy Hara Bhara Kebab",
+      "description": "Pan-fried spinach, green pea, and potato patties infused with roasted cumin and aromatic herbs.",
+      "price": 220.00,
+      "image": "https://images.unsplash.com/photo-1601050690597-df0568f70950?auto=format&fit=crop&w=800&q=85",
+      "tags": ["popular"],
+      "dietary": { "isVegetarian": true, "isGlutenFree": true, "isVegan": true, "containsNuts": false }
     },
     {
       "id": "dish-03",
       "categoryId": "starters",
-      "title": "Wild Mushroom Velouté",
-      "description": "Velvety forest mushroom soup topped with crispy shallots and aged parmesan foam.",
-      "price": 22.00,
-      "image": "https://images.unsplash.com/photo-1547592166-23ac45744acd?auto=format&fit=crop&w=800&q=80",
-      "tags": [],
-      "dietary": { "isVegetarian": true, "isGlutenFree": true, "isVegan": false, "containsNuts": false }
+      "title": "Amritsari Stuffed Kulcha & Chole",
+      "description": "Crispy tandoori kulcha stuffed with spiced potatoes and onions, served with tangy chickpea curry.",
+      "price": 240.00,
+      "image": "https://images.unsplash.com/photo-1626132647523-66f5bf380027?auto=format&fit=crop&w=800&q=85",
+      "tags": ["popular"],
+      "dietary": { "isVegetarian": true, "isGlutenFree": false, "isVegan": true, "containsNuts": false }
     },
     {
       "id": "dish-04",
       "categoryId": "mains",
-      "title": "Pan-Seared Wagyu Filet Mignon",
-      "description": "A5 Japanese Wagyu served with caramelized shallot puree, bone marrow jus, and smoked potato galette.",
-      "price": 78.00,
-      "image": "https://images.unsplash.com/photo-1558030006-450675393462?auto=format&fit=crop&w=800&q=80",
+      "title": "Chaudhari Special Shahi Paneer Butter Masala",
+      "description": "Soft paneer cubes simmered in a rich tomato, cashew nut cream gravy with fenugreek and butter.",
+      "price": 340.00,
+      "image": "https://images.unsplash.com/photo-1588166524941-3bf61a9c41db?auto=format&fit=crop&w=800&q=85",
       "tags": ["popular", "chef-special"],
-      "dietary": { "isVegetarian": false, "isGlutenFree": true, "isVegan": false, "containsNuts": false }
+      "dietary": { "isVegetarian": true, "isGlutenFree": true, "isVegan": false, "containsNuts": true }
     },
     {
       "id": "dish-05",
       "categoryId": "mains",
-      "title": "Chilean Sea Bass en Papillote",
-      "description": "Oven-baked sea bass in parchment paper with lemongrass emulsion, baby bok choy, and ginger glaze.",
-      "price": 54.00,
-      "image": "https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?auto=format&fit=crop&w=800&q=80",
+      "title": "Dal Makhani Royal",
+      "description": "Slow-cooked black lentils simmered overnight with butter, cream, and aromatic Indian spices.",
+      "price": 290.00,
+      "image": "https://images.unsplash.com/photo-1626777552726-4a6b54c97e46?auto=format&fit=crop&w=800&q=85",
       "tags": ["chef-special"],
-      "dietary": { "isVegetarian": false, "isGlutenFree": true, "isVegan": false, "containsNuts": false }
+      "dietary": { "isVegetarian": true, "isGlutenFree": true, "isVegan": false, "containsNuts": false }
     },
     {
       "id": "dish-06",
       "categoryId": "mains",
-      "title": "Saffron Risotto ai Funghi",
-      "description": "Acquerello carnaroli rice slow-cooked with Iranian saffron, wild chanterelles, and vegan parmesan crumble.",
-      "price": 38.00,
-      "image": "https://images.unsplash.com/photo-1633964913295-ceb43826e7c9?auto=format&fit=crop&w=800&q=80",
+      "title": "Hyderabadi Veg Dum Biryani",
+      "description": "Fragrant basmati rice layered with garden vegetables, saffron, mint, and fried onions served with raita.",
+      "price": 320.00,
+      "image": "https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?auto=format&fit=crop&w=800&q=85",
       "tags": ["popular"],
-      "dietary": { "isVegetarian": true, "isGlutenFree": true, "isVegan": true, "containsNuts": false }
+      "dietary": { "isVegetarian": true, "isGlutenFree": true, "isVegan": false, "containsNuts": true }
     },
     {
       "id": "dish-07",
       "categoryId": "desserts",
-      "title": "Valrhona Chocolate Soufflé",
-      "description": "Warm 70% dark chocolate soufflé accompanied by Madagascar bourbon vanilla bean ice cream.",
-      "price": 20.00,
-      "image": "https://images.unsplash.com/photo-1606313564200-e75d5e30476c?auto=format&fit=crop&w=800&q=80",
+      "title": "Hot Gulab Jamun with Shahi Rabri",
+      "description": "Warm fried milk dumplings soaked in cardamom sugar syrup, topped with thick saffron rabri.",
+      "price": 160.00,
+      "image": "https://images.unsplash.com/photo-1605197586548-06a888d3b1b3?auto=format&fit=crop&w=800&q=85",
       "tags": ["popular"],
-      "dietary": { "isVegetarian": true, "isGlutenFree": false, "isVegan": false, "containsNuts": false }
+      "dietary": { "isVegetarian": true, "isGlutenFree": false, "isVegan": false, "containsNuts": true }
     },
     {
       "id": "dish-08",
       "categoryId": "desserts",
-      "title": "Deconstructed Meyer Lemon Tart",
-      "description": "Lemon curd spheres, toasted Italian meringue, sable crumble, and fresh raspberry coulis.",
-      "price": 18.00,
-      "image": "https://images.unsplash.com/photo-1587314168485-3236d6710814?auto=format&fit=crop&w=800&q=80",
+      "title": "Kesari Rasmalai",
+      "description": "Soft cottage cheese patties immersed in chilled saffron milk enriched with pistachio and almonds.",
+      "price": 180.00,
+      "image": "https://images.unsplash.com/photo-1541781774459-bb2af2f05b55?auto=format&fit=crop&w=800&q=85",
       "tags": ["chef-special"],
-      "dietary": { "isVegetarian": true, "isGlutenFree": false, "isVegan": false, "containsNuts": true }
+      "dietary": { "isVegetarian": true, "isGlutenFree": true, "isVegan": false, "containsNuts": true }
     },
     {
       "id": "dish-09",
       "categoryId": "cocktails",
-      "title": "Smoked Old Fashioned",
-      "description": "WhistlePig Rye Whisky, Angostura bitters, organic maple syrup, infused with cherry wood smoke.",
-      "price": 22.00,
-      "image": "https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?auto=format&fit=crop&w=800&q=80",
+      "title": "Royal Mango Malai Lassi",
+      "description": "Thick churned sweet yogurt drink blended with Alphonso mango pulp and garnished with dry fruits.",
+      "price": 140.00,
+      "image": "https://images.unsplash.com/photo-1571006682858-a458b8a1628f?auto=format&fit=crop&w=800&q=85",
       "tags": ["popular"],
-      "dietary": { "isVegetarian": true, "isGlutenFree": true, "isVegan": true, "containsNuts": false }
+      "dietary": { "isVegetarian": true, "isGlutenFree": true, "isVegan": false, "containsNuts": true }
     },
     {
       "id": "dish-10",
       "categoryId": "cocktails",
-      "title": "Botanical Rose Spritz",
-      "description": "Empress 1908 Gin, elderflower liqueur, sparkling prosecco, pressed lemon juice, and rose petal infusion.",
-      "price": 19.00,
-      "image": "https://images.unsplash.com/photo-1551024709-8f23befc6f87?auto=format&fit=crop&w=800&q=80",
+      "title": "Special Kulhad Masala Chai",
+      "description": "Aromatic Indian tea brewed with cardamom, ginger, cloves, and whole milk served in traditional clay pot.",
+      "price": 80.00,
+      "image": "https://images.unsplash.com/photo-1576092768241-dec231879fc3?auto=format&fit=crop&w=800&q=85",
       "tags": [],
-      "dietary": { "isVegetarian": true, "isGlutenFree": true, "isVegan": true, "containsNuts": false }
+      "dietary": { "isVegetarian": true, "isGlutenFree": true, "isVegan": false, "containsNuts": false }
     }
   ]
 }

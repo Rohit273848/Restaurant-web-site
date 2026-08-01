@@ -1,4 +1,4 @@
-import{$ as c,g as w,f as u,d as m,b as v,h as x}from"./main-DfgMMrCK.js";/* empty css                 */import{r as h,o as k}from"./FoodModal-DwAq7SDC.js";function y(o=5){let d='<div class="flex items-center gap-1 text-brand-gold aria-label="'+o+' out of 5 stars">';for(let a=1;a<=5;a++){const i=a<=o;d+=`
+import{$ as c,g as w,f as u,d as m,b as v,h as x}from"./main-DfgMMrCK.js";/* empty css                 */import{r as h,o as k}from"./FoodModal-DZBcM7JP.js";function y(o=5){let d='<div class="flex items-center gap-1 text-brand-gold aria-label="'+o+' out of 5 stars">';for(let a=1;a<=5;a++){const i=a<=o;d+=`
       <svg class="w-4 h-4 ${i?"fill-brand-gold text-brand-gold":"fill-transparent text-slate-600"}" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
         <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
       </svg>

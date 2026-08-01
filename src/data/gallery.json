@@ -1,44 +1,66 @@
 [
   {
     "id": "gal-01",
-    "title": "Main Dining Hall",
+    "title": "Chaudhari Open Garden Lawn",
     "category": "interior",
-    "image": "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1200&q=80",
-    "caption": "Elegant ambient lighting with custom velvet seating."
+    "image": "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1200&q=85",
+    "alt": "Hotel Chaudhari Garden ambient outdoor dining lawn",
+    "caption": "Spacious open garden dining lawn with warm ambient lighting for family gatherings."
   },
   {
     "id": "gal-02",
-    "title": "Artisanal Plating",
+    "title": "Shahi Paneer & Naan Plating",
     "category": "dishes",
-    "image": "https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=1200&q=80",
-    "caption": "Precision craftsmanship in every seasonal entree."
+    "image": "https://images.unsplash.com/photo-1588166524941-3bf61a9c41db?auto=format&fit=crop&w=1200&q=85",
+    "alt": "Shahi Paneer Butter Masala served with butter naan",
+    "caption": "Rich Paneer Butter Masala served fresh with tandoori garlic naan."
   },
   {
     "id": "gal-03",
-    "title": "Sommelier Reserve Bar",
-    "category": "bar",
-    "image": "https://images.unsplash.com/photo-1572116469696-31de0f17cc34?auto=format&fit=crop&w=1200&q=80",
-    "caption": "Curated selection of over 400 rare vintage wines."
+    "title": "Authentic Clay Tandoor Kitchen",
+    "category": "chef",
+    "image": "https://images.unsplash.com/photo-1567188040759-fb8a883dc6d8?auto=format&fit=crop&w=1200&q=85",
+    "alt": "Master tandoori chef roasting paneer tikka angara",
+    "caption": "Live tandoori oven preparation by our senior Indian master chefs."
   },
   {
     "id": "gal-04",
-    "title": "Private Executive Dining",
-    "category": "interior",
-    "image": "https://images.unsplash.com/photo-1550966871-3ed3cdb5ed0c?auto=format&fit=crop&w=1200&q=80",
-    "caption": "Secluded private lounge for celebrations and meetings."
+    "title": "Royal Hyderabadi Biryani Handi",
+    "category": "dishes",
+    "image": "https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?auto=format&fit=crop&w=1200&q=85",
+    "alt": "Aromatic Dum Biryani handi presentation",
+    "caption": "Slow dum-cooked veg biryani served with authentic mint burani raita."
   },
   {
     "id": "gal-05",
-    "title": "Mixology in Motion",
+    "title": "Chilled Kulhad Lassi Bar",
     "category": "bar",
-    "image": "https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?auto=format&fit=crop&w=1200&q=80",
-    "caption": "Handcrafted cocktails smoke-infused at your table."
+    "image": "https://images.timesnownews.com/photo/msid-153222518/153222518.jpg",
+    "alt": "Fresh churned mango malai lassi in clay kulhad",
+    "caption": "Hand-churned Alphonso mango malai lassi garnished with saffron and almonds."
   },
   {
     "id": "gal-06",
-    "title": "Chef's Kitchen Pass",
+    "title": "Traditional Mithai Counter",
+    "category": "dishes",
+    "image": "https://png.pngtree.com/thumb_back/fw800/background/20250720/pngtree-colorful-traditional-mithai-display-for-indian-festivals-image_17621425.webp",
+    "alt": "Freshly prepared hot Gulab Jamun with Rabri",
+    "caption": "Decadent hot Gulab Jamuns paired with thick saffron malai rabri."
+  },
+  {
+    "id": "gal-07",
+    "title": "Bespoke Family Banquet Hall",
     "category": "events",
-    "image": "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=1200&q=80",
-    "caption": "Live culinary art performance in our open kitchen."
+    "image": "https://fabriziobanquethall.com/wp-content/uploads/Fabrizio-Banquet-Gallery-04.jpg",
+    "alt": "Grand family celebration hall and lawn event",
+    "caption": "Spacious venue arrangements for weddings, birthdays, and family banquets."
+  },
+  {
+    "id": "gal-08",
+    "title": "Special Kulhad Masala Chai",
+    "category": "bar",
+    "image": "https://images.unsplash.com/photo-1576092768241-dec231879fc3?auto=format&fit=crop&w=1200&q=85",
+    "alt": "Freshly brewed clay pot masala chai",
+    "caption": "Aromatic spiced tea brewed fresh with ginger and cardamom."
   }
 ]

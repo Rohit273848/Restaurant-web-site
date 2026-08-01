@@ -5,9 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Atmosphere Gallery | L'Étoile Fine Dining</title>
   <meta name="description" content="Explore photos of our dining room atmosphere, signature dish presentation, sommelier bar, and private events." />
-  <script type="module" crossorigin src="/assets/gallery-C5h_jbTn.js"></script>
+  <script type="module" crossorigin src="/assets/gallery-CvS1Gt2r.js"></script>
   <link rel="modulepreload" crossorigin href="/assets/main-DfgMMrCK.js">
-  <link rel="stylesheet" crossorigin href="/assets/tailwind-Betwa1H1.css">
+  <link rel="stylesheet" crossorigin href="/assets/tailwind-CLnlvZUV.css">
 </head>
 <body class="bg-brand-dark text-slate-100 antialiased selection:bg-brand-gold selection:text-slate-950 flex flex-col min-h-screen">
   <div id="gallery-page-identifier" class="hidden"></div>
@@ -17,12 +17,12 @@
       <a href="index.html" class="flex items-center gap-3 group">
         <div class="w-10 h-10 rounded-full bg-gold-gradient p-0.5 flex items-center justify-center shadow-gold-glow">
           <div class="w-full h-full bg-brand-dark rounded-full flex items-center justify-center">
-            <span class="font-serif font-bold text-brand-gold text-xl">É</span>
+            <span class="font-serif font-bold text-brand-gold text-xl">C</span>
           </div>
         </div>
         <div class="flex flex-col">
-          <span class="font-serif text-2xl font-bold tracking-wider text-slate-100 brand-name-text">L'Étoile</span>
-          <span class="text-[10px] tracking-[0.25em] uppercase text-brand-gold font-medium">Fine Dining</span>
+          <span class="font-serif text-xl font-bold tracking-wider text-slate-100 brand-name-text">Chaudhari Garden</span>
+          <span class="text-[10px] tracking-[0.2em] uppercase text-brand-gold font-medium">Hotel & Dining</span>
         </div>
       </a>
 
@@ -68,42 +68,95 @@
   </div>
 
   <main class="flex-grow pt-32 pb-24">
-    <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-10 text-center">
-      <span class="section-tag justify-center">
-        <span class="w-6 h-0.5 bg-brand-gold"></span>
-        Visual Journey
-        <span class="w-6 h-0.5 bg-brand-gold"></span>
-      </span>
-      <h1 class="font-serif fluid-section-title font-bold text-slate-100 mb-3">Atmosphere & Plating Gallery</h1>
-      <p class="text-slate-300 text-sm max-w-lg mx-auto">Click any image to view in full resolution.</p>
-    </section>
+    <!-- Page Hero Banner -->
+    <section class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-12 text-center overflow-hidden">
+      <!-- Ambient Lighting Glow Background Effects -->
+      <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-brand-gold/10 rounded-full filter blur-3xl pointer-events-none"></div>
 
-    <!-- Filter Buttons -->
-    <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-10">
-      <div id="gallery-filter-tabs" class="flex flex-wrap items-center justify-center gap-3">
-        <button data-category="all" class="gallery-tab-btn px-6 py-2 rounded-full text-xs font-semibold bg-brand-gold text-slate-950">All Photos</button>
-        <button data-category="interior" class="gallery-tab-btn px-6 py-2 rounded-full text-xs font-semibold bg-brand-dark-card border border-brand-dark-border text-slate-300 hover:text-brand-gold">Interior</button>
-        <button data-category="dishes" class="gallery-tab-btn px-6 py-2 rounded-full text-xs font-semibold bg-brand-dark-card border border-brand-dark-border text-slate-300 hover:text-brand-gold">Artisanal Dishes</button>
-        <button data-category="bar" class="gallery-tab-btn px-6 py-2 rounded-full text-xs font-semibold bg-brand-dark-card border border-brand-dark-border text-slate-300 hover:text-brand-gold">Bar & Cocktails</button>
-        <button data-category="events" class="gallery-tab-btn px-6 py-2 rounded-full text-xs font-semibold bg-brand-dark-card border border-brand-dark-border text-slate-300 hover:text-brand-gold">Private Events</button>
+      <div class="relative z-10">
+        <span class="section-tag justify-center mb-3">
+          <span class="w-6 h-0.5 bg-brand-gold"></span>
+          Visual Journey
+          <span class="w-6 h-0.5 bg-brand-gold"></span>
+        </span>
+        <h1 class="font-serif fluid-section-title font-bold text-slate-100 mb-4">Atmosphere & Culinary Gallery</h1>
+        <p class="fluid-subtitle text-slate-300 font-light max-w-xl mx-auto leading-relaxed">
+          Immerse yourself in the elegant dining ambiance, artisanal dish presentations, and master sommelier reserve bar at L'Étoile.
+        </p>
       </div>
     </section>
 
-    <!-- Gallery Grid -->
+    <!-- Filter Category Buttons -->
+    <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-12" aria-label="Gallery Categories">
+      <div id="gallery-filter-tabs" class="flex flex-wrap items-center justify-center gap-2.5" role="tablist" aria-label="Gallery Image Categories">
+        <button data-category="all" role="tab" aria-selected="true" class="gallery-tab-btn px-6 py-2.5 rounded-full text-xs font-semibold uppercase tracking-wider bg-brand-gold text-slate-950 shadow-gold-glow transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-brand-gold">
+          All Photos
+        </button>
+        <button data-category="interior" role="tab" aria-selected="false" class="gallery-tab-btn px-6 py-2.5 rounded-full text-xs font-semibold uppercase tracking-wider bg-brand-dark-card border border-brand-dark-border text-slate-300 hover:text-brand-gold hover:border-brand-gold/40 transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-brand-gold">
+          Dining Interior
+        </button>
+        <button data-category="dishes" role="tab" aria-selected="false" class="gallery-tab-btn px-6 py-2.5 rounded-full text-xs font-semibold uppercase tracking-wider bg-brand-dark-card border border-brand-dark-border text-slate-300 hover:text-brand-gold hover:border-brand-gold/40 transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-brand-gold">
+          Artisanal Dishes
+        </button>
+        <button data-category="bar" role="tab" aria-selected="false" class="gallery-tab-btn px-6 py-2.5 rounded-full text-xs font-semibold uppercase tracking-wider bg-brand-dark-card border border-brand-dark-border text-slate-300 hover:text-brand-gold hover:border-brand-gold/40 transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-brand-gold">
+          Sommelier Bar
+        </button>
+        <button data-category="chef" role="tab" aria-selected="false" class="gallery-tab-btn px-6 py-2.5 rounded-full text-xs font-semibold uppercase tracking-wider bg-brand-dark-card border border-brand-dark-border text-slate-300 hover:text-brand-gold hover:border-brand-gold/40 transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-brand-gold">
+          Kitchen & Chef
+        </button>
+        <button data-category="events" role="tab" aria-selected="false" class="gallery-tab-btn px-6 py-2.5 rounded-full text-xs font-semibold uppercase tracking-wider bg-brand-dark-card border border-brand-dark-border text-slate-300 hover:text-brand-gold hover:border-brand-gold/40 transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-brand-gold">
+          Private Events
+        </button>
+      </div>
+    </section>
+
+    <!-- Gallery Responsive Grid -->
+    <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-20" aria-label="Photo Gallery Grid">
+      <div id="gallery-grid-container" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Dynamic JS Hydration -->
+      </div>
+    </section>
+
+    <!-- Bottom Conversion CTA Banner -->
     <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div id="gallery-grid-container" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-        <!-- Hydrated by JS -->
+      <div class="p-8 sm:p-12 rounded-2xl bg-gradient-to-r from-brand-dark-card via-brand-dark-card to-brand-dark border border-brand-gold/30 shadow-2xl shadow-gold-glow/10 flex flex-col md:flex-row items-center justify-between gap-8">
+        <div>
+          <span class="text-xs font-bold uppercase tracking-widest text-brand-gold block mb-2 font-sans">Atmosphere & Hospitality</span>
+          <h2 class="font-serif text-2xl sm:text-3xl font-bold text-slate-100 mb-2">Experience Hotel Chaudhari Garden in Person</h2>
+          <p class="text-slate-300 text-sm font-light max-w-xl">Join us for an authentic garden dining experience on National Highway 53.</p>
+        </div>
+        <div class="flex items-center gap-4 w-full md:w-auto shrink-0">
+          <a href="contact.html" class="btn-primary w-full md:w-auto px-8 py-4 text-xs uppercase tracking-widest text-center">
+            Contact Us
+          </a>
+        </div>
       </div>
     </section>
 
-    <!-- Lightbox Modal -->
-    <div id="lightbox-modal" class="fixed inset-0 z-50 bg-slate-950/95 backdrop-blur-md hidden items-center justify-center p-4">
-      <button id="lightbox-close" class="absolute top-6 right-6 p-3 rounded-full bg-slate-900 border border-slate-700 text-slate-300 hover:text-white" aria-label="Close Lightbox">
+    <!-- Accessible Lightbox Modal Viewer -->
+    <div id="lightbox-modal" class="fixed inset-0 z-50 bg-slate-950/95 backdrop-blur-md hidden items-center justify-center p-4 sm:p-8" role="dialog" aria-modal="true" aria-label="Image Fullscreen Viewer">
+      <!-- Close Button -->
+      <button id="lightbox-close" class="absolute top-6 right-6 z-50 p-3 rounded-full bg-brand-dark-card border border-brand-gold/40 text-slate-300 hover:text-white hover:border-brand-gold focus:outline-none focus:ring-2 focus:ring-brand-gold transition-all" aria-label="Close Lightbox (Esc)">
         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
       </button>
-      <div class="max-w-4xl w-full text-center">
-        <img id="lightbox-img" src="" alt="Gallery Image" class="max-h-[80vh] mx-auto rounded-xl shadow-2xl border border-brand-dark-border object-contain mb-4" />
-        <p id="lightbox-caption" class="text-slate-300 text-sm font-serif italic"></p>
+
+      <!-- Prev Button -->
+      <button id="lightbox-prev" class="absolute left-4 sm:left-8 top-1/2 -translate-y-1/2 z-50 p-3 rounded-full bg-brand-dark-card/90 border border-brand-gold/40 text-brand-gold hover:bg-brand-gold hover:text-slate-950 focus:outline-none focus:ring-2 focus:ring-brand-gold transition-all" aria-label="Previous Image (Left Arrow)">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/></svg>
+      </button>
+
+      <!-- Next Button -->
+      <button id="lightbox-next" class="absolute right-4 sm:right-8 top-1/2 -translate-y-1/2 z-50 p-3 rounded-full bg-brand-dark-card/90 border border-brand-gold/40 text-brand-gold hover:bg-brand-gold hover:text-slate-950 focus:outline-none focus:ring-2 focus:ring-brand-gold transition-all" aria-label="Next Image (Right Arrow)">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+      </button>
+
+      <!-- Lightbox Main Frame -->
+      <div class="max-w-5xl w-full text-center relative z-10">
+        <div class="relative rounded-2xl overflow-hidden shadow-2xl border border-brand-gold/30 bg-brand-dark-card p-2 mb-4">
+          <img id="lightbox-img" src="" alt="Gallery Image" class="max-h-[75vh] w-auto mx-auto rounded-xl object-contain" />
+        </div>
+        <h3 id="lightbox-title" class="font-serif text-2xl font-bold text-slate-100 mb-1"></h3>
+        <p id="lightbox-caption" class="text-slate-300 text-sm font-light max-w-2xl mx-auto"></p>
       </div>
     </div>
   </main>
