@@ -3,7 +3,7 @@
     "id": "gal-01",
     "title": "Sapna Momos Storefront (Day & Night View)",
     "category": "exterior",
-    "image": "/images/storefront.jpg",
+    "image": "https://ik.imagekit.io/cvlhdu1b2/images/storefront.jpg",
     "alt": "Sapna Momos official shopfront illuminated day and night view in Usmanpura",
     "caption": "Official Sapna Momos shopfront in Usmanpura showing daytime entrance and night-time glowing signboard."
   },
@@ -11,7 +11,7 @@
     "id": "gal-02",
     "title": "Indoor Dining & Seating Area",
     "category": "interior",
-    "image": "/images/interior.jpg",
+    "image": "https://ik.imagekit.io/cvlhdu1b2/images/interior.jpg",
     "alt": "Clean indoor seating and dining area at Sapna Momos outlet",
     "caption": "Comfortable indoor seating with a warm ambience for families and friends to enjoy freshly prepared momos."
   },
@@ -19,7 +19,7 @@
     "id": "gal-03",
     "title": "Steamed Veg & Chicken Momos",
     "category": "food",
-    "image": "/images/steamed_momos.jpg",
+    "image": "https://ik.imagekit.io/cvlhdu1b2/images/steamed_momos.jpg",
     "alt": "Freshly steamed veg and chicken momos served in a bamboo basket with spicy chutney",
     "caption": "Freshly steamed soft momos served with signature spicy garlic chutney and creamy mayonnaise."
   },
@@ -27,7 +27,7 @@
     "id": "gal-04",
     "title": "Golden Fry Momos",
     "category": "food",
-    "image": "/images/fry_momos.jpg",
+    "image": "https://ik.imagekit.io/cvlhdu1b2/images/fry_momos.jpg",
     "alt": "Golden crispy fried momos served with spicy dip",
     "caption": "Perfectly fried momos with a crispy golden exterior and juicy filling."
   },
@@ -35,7 +35,7 @@
     "id": "gal-05",
     "title": "Smoky Tandoori Momos",
     "category": "food",
-    "image": "/images/tandoori_momos.jpg",
+    "image": "https://ik.imagekit.io/cvlhdu1b2/images/tandoori_momos.jpg",
     "alt": "Smoky tandoori momos grilled with Indian spices",
     "caption": "Clay oven roasted tandoori momos coated with rich spices and served with mint chutney."
   },
@@ -43,7 +43,7 @@
     "id": "gal-06",
     "title": "Extra Crunchy Kurkure Momos",
     "category": "food",
-    "image": "/images/kurkure_momos.jpg",
+    "image": "https://ik.imagekit.io/cvlhdu1b2/images/kurkure_momos.jpg",
     "alt": "Crunchy kurkure momos coated with crispy crumbs",
     "caption": "Signature Kurkure Momos coated with a crunchy golden crust for an irresistible bite."
   },
@@ -51,7 +51,7 @@
     "id": "gal-07",
     "title": "Creamy Afghani Malai Momos",
     "category": "food",
-    "image": "/images/afghani_malai_momos.jpg",
+    "image": "https://ik.imagekit.io/cvlhdu1b2/images/afghani_malai_momos.jpg",
     "alt": "Creamy Afghani Malai Momos topped with rich white sauce",
     "caption": "Rich and creamy Afghani Malai Momos prepared with butter, fresh cream, and aromatic spices."
   },
@@ -59,7 +59,7 @@
     "id": "gal-08",
     "title": "Cheesy Pizza Momos",
     "category": "food",
-    "image": "/images/pizza_momos.jpg",
+    "image": "https://ik.imagekit.io/cvlhdu1b2/images/pizza_momos.jpg",
     "alt": "Pizza momos topped with melted mozzarella cheese",
     "caption": "Fusion-style Pizza Momos loaded with mozzarella cheese, pizza sauce, herbs, and vegetables."
   },
@@ -67,7 +67,7 @@
     "id": "gal-09",
     "title": "Special Cheese Momos",
     "category": "food",
-    "image": "/images/special_cheese_momos.jpg",
+    "image": "https://ik.imagekit.io/cvlhdu1b2/images/special_cheese_momos.jpg",
     "alt": "Special cheese momos filled with melted cheese",
     "caption": "Cheese-filled momos with a rich, creamy center and perfectly steamed wrapper."
   },
@@ -75,7 +75,7 @@
     "id": "gal-10",
     "title": "Cheese Chilli Momos",
     "category": "food",
-    "image": "/images/cheese_chilli_momos.jpg",
+    "image": "https://ik.imagekit.io/cvlhdu1b2/images/cheese_chilli_momos.jpg",
     "alt": "Cheese chilli momos tossed in spicy chilli sauce",
     "caption": "Soft momos coated in spicy chilli sauce and melted cheese for the perfect balance of heat and creaminess."
   }

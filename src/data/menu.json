@@ -33,7 +33,7 @@
       "title": "Steam Momos (Veg)",
       "description": "Authentic Tibetan-style steamed dumplings stuffed with finely minced fresh garden vegetables and mild herbs. Served with spicy red chutney.",
       "price": 60.00,
-      "image": "/images/steamed_momos.jpg",
+      "image": "https://ik.imagekit.io/cvlhdu1b2/images/steamed_momos.jpg",
       "tags": ["popular"],
       "dietary": { "isVegetarian": true, "isGlutenFree": false, "isVegan": true, "containsNuts": false }
     },
@@ -43,7 +43,7 @@
       "title": "Steam Momos (Paneer)",
       "description": "Piping hot steamed dumplings stuffed with soft grated cottage cheese, green chillies, and delicate Himalayan spices.",
       "price": 70.00,
-      "image": "/images/steamed_momos.jpg",
+      "image": "https://ik.imagekit.io/cvlhdu1b2/images/steamed_momos.jpg",
       "tags": ["popular"],
       "dietary": { "isVegetarian": true, "isGlutenFree": false, "isVegan": false, "containsNuts": false }
     },
@@ -53,7 +53,7 @@
       "title": "Steam Momos (Chicken)",
       "description": "Steamed dumplings stuffed with tender minced chicken, scallions, garlic, and freshly cracked black pepper.",
       "price": 70.00,
-      "image": "/images/steamed_momos.jpg",
+      "image": "https://ik.imagekit.io/cvlhdu1b2/images/steamed_momos.jpg",
       "tags": ["chef-special", "popular"],
       "dietary": { "isVegetarian": false, "isGlutenFree": false, "isVegan": false, "containsNuts": false }
     },
@@ -63,7 +63,7 @@
       "title": "Fry Momos (Veg / Paneer / Chicken)",
       "description": "Crispy golden deep-fried momos with a crunchy outer layer and savory filling inside. Served with mayo and hot chutney.",
       "price": 70.00,
-      "image": "/images/crispy_fried_momos.jpg",
+      "image": "https://ik.imagekit.io/cvlhdu1b2/images/crispy_fried_momos.jpg",
       "tags": ["popular"],
       "dietary": { "isVegetarian": true, "isGlutenFree": false, "isVegan": false, "containsNuts": false }
     },
@@ -73,7 +73,7 @@
       "title": "Tandoori Momos",
       "description": "Tossed in spicy yogurt tandoori marinade, roasted over charcoal, and sprinkled with chaat masala and fresh coriander.",
       "price": 70.00,
-      "image": "/images/tandoori_momos.jpg",
+      "image": "https://ik.imagekit.io/cvlhdu1b2/images/tandoori_momos.jpg",
       "tags": ["best-seller", "popular"],
       "dietary": { "isVegetarian": true, "isGlutenFree": false, "isVegan": false, "containsNuts": false }
     },
@@ -83,7 +83,7 @@
       "title": "Special Tandoori Masala Momos",
       "description": "Chef's special double-spiced tandoori masala momos charred in clay oven with butter and tangy onions.",
       "price": 100.00,
-      "image": "/images/tandoori_momos.jpg",
+      "image": "https://ik.imagekit.io/cvlhdu1b2/images/tandoori_momos.jpg",
       "tags": ["chef-special"],
       "dietary": { "isVegetarian": true, "isGlutenFree": false, "isVegan": false, "containsNuts": false }
     },
@@ -93,7 +93,7 @@
       "title": "Kurkure Momos",
       "description": "Coated in crunchy cornflake batter and deep-fried to create an irresistible extra crunchy texture.",
       "price": 100.00,
-      "image": "/images/kurkure_momos.jpg",
+      "image": "https://ik.imagekit.io/cvlhdu1b2/images/kurkure_momos.jpg",
       "tags": ["best-seller", "popular"],
       "dietary": { "isVegetarian": true, "isGlutenFree": false, "isVegan": false, "containsNuts": false }
     },
@@ -103,7 +103,7 @@
       "title": "Cheese Chilli Momos",
       "description": "Spicy chilli garlic momos smothered in melted cheese and garnished with sliced capsicum and green chillies.",
       "price": 120.00,
-      "image": "/images/crispy_fried_momos.jpg",
+      "image": "https://ik.imagekit.io/cvlhdu1b2/images/crispy_fried_momos.jpg",
       "tags": ["best-seller", "popular"],
       "dietary": { "isVegetarian": true, "isGlutenFree": false, "isVegan": false, "containsNuts": false }
     },
@@ -113,7 +113,7 @@
       "title": "Special Cheese Momos",
       "description": "Loaded with rich processed and mozzarella cheese filling that melts in your mouth.",
       "price": 120.00,
-      "image": "/images/steamed_momos.jpg",
+      "image": "https://ik.imagekit.io/cvlhdu1b2/images/steamed_momos.jpg",
       "tags": ["best-seller", "popular"],
       "dietary": { "isVegetarian": true, "isGlutenFree": false, "isVegan": false, "containsNuts": false }
     },
@@ -123,7 +123,7 @@
       "title": "Afghani Malai Momos",
       "description": "Momos drenched in rich cashew malai cream sauce, butter, herbs, and delicate white pepper.",
       "price": 130.00,
-      "image": "/images/afghani_malai_momos.jpg",
+      "image": "https://ik.imagekit.io/cvlhdu1b2/images/afghani_malai_momos.jpg",
       "tags": ["best-seller", "chef-special"],
       "dietary": { "isVegetarian": true, "isGlutenFree": false, "isVegan": false, "containsNuts": true }
     },
@@ -133,7 +133,7 @@
       "title": "Pizza Momos",
       "description": "Fusion favorite! Baked momos topped with rich pizza sauce, sweet corn, oregano, and gooey melted mozzarella.",
       "price": 140.00,
-      "image": "/images/pizza_momos.jpg",
+      "image": "https://ik.imagekit.io/cvlhdu1b2/images/pizza_momos.jpg",
       "tags": ["best-seller", "popular"],
       "dietary": { "isVegetarian": true, "isGlutenFree": false, "isVegan": false, "containsNuts": false }
     },
@@ -143,7 +143,7 @@
       "title": "Plain French Fries",
       "description": "Crispy golden deep-fried potato fries salted to perfection.",
       "price": 100.00,
-      "image": "/images/peri_peri_fries.jpg",
+      "image": "https://ik.imagekit.io/cvlhdu1b2/images/peri_peri_fries.jpg",
       "tags": [],
       "dietary": { "isVegetarian": true, "isGlutenFree": true, "isVegan": true, "containsNuts": false }
     },
@@ -153,7 +153,7 @@
       "title": "Peri Peri French Fries",
       "description": "Crispy potato fries tossed in spicy and tangy Peri Peri seasoning.",
       "price": 120.00,
-      "image": "/images/peri_peri_fries.jpg",
+      "image": "https://ik.imagekit.io/cvlhdu1b2/images/peri_peri_fries.jpg",
       "tags": ["popular"],
       "dietary": { "isVegetarian": true, "isGlutenFree": true, "isVegan": true, "containsNuts": false }
     },
@@ -163,7 +163,7 @@
       "title": "Packaged Water Bottle",
       "description": "Chilled 1 Liter packaged drinking water bottle.",
       "price": 20.00,
-      "image": "/images/steamed_momos.jpg",
+      "image": "https://ik.imagekit.io/cvlhdu1b2/images/steamed_momos.jpg",
       "tags": [],
       "dietary": { "isVegetarian": true, "isGlutenFree": true, "isVegan": true, "containsNuts": false }
     }
