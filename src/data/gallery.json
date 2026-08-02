@@ -1,66 +1,82 @@
 [
   {
     "id": "gal-01",
-    "title": "Chaudhari Open Garden Lawn",
-    "category": "interior",
-    "image": "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1200&q=85",
-    "alt": "Hotel Chaudhari Garden ambient outdoor dining lawn",
-    "caption": "Spacious open garden dining lawn with warm ambient lighting for family gatherings."
+    "title": "Sapna Momos Storefront (Day & Night View)",
+    "category": "exterior",
+    "image": "/images/storefront.jpg",
+    "alt": "Sapna Momos official shopfront illuminated day and night view in Usmanpura",
+    "caption": "Official Sapna Momos shopfront in Usmanpura showing daytime entrance and night-time glowing signboard."
   },
   {
     "id": "gal-02",
-    "title": "Shahi Paneer & Naan Plating",
-    "category": "dishes",
-    "image": "https://images.unsplash.com/photo-1588166524941-3bf61a9c41db?auto=format&fit=crop&w=1200&q=85",
-    "alt": "Shahi Paneer Butter Masala served with butter naan",
-    "caption": "Rich Paneer Butter Masala served fresh with tandoori garlic naan."
+    "title": "Indoor Dining & Seating Area",
+    "category": "interior",
+    "image": "/images/storefront.jpg",
+    "alt": "Clean indoor seating and dining area at Sapna Momos outlet",
+    "caption": "Spacious indoor seating area for families and friends enjoying hot momos."
   },
   {
     "id": "gal-03",
-    "title": "Authentic Clay Tandoor Kitchen",
-    "category": "chef",
-    "image": "https://images.unsplash.com/photo-1567188040759-fb8a883dc6d8?auto=format&fit=crop&w=1200&q=85",
-    "alt": "Master tandoori chef roasting paneer tikka angara",
-    "caption": "Live tandoori oven preparation by our senior Indian master chefs."
+    "title": "Steamed Veg & Chicken Momos Basket",
+    "category": "food",
+    "image": "/images/steamed_momos.jpg",
+    "alt": "Freshly steamed veg and chicken momos in traditional bamboo steamer basket with red chutney and mayo",
+    "caption": "Piping hot Steamed Veg & Chicken Momos served fresh in a traditional bamboo basket with spicy garlic chutney and mayo dips."
   },
   {
     "id": "gal-04",
-    "title": "Royal Hyderabadi Biryani Handi",
-    "category": "dishes",
-    "image": "https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?auto=format&fit=crop&w=1200&q=85",
-    "alt": "Aromatic Dum Biryani handi presentation",
-    "caption": "Slow dum-cooked veg biryani served with authentic mint burani raita."
+    "title": "Golden Pan-Fried Crispy Momos",
+    "category": "food",
+    "image": "https://images.unsplash.com/photo-1541696432-82c6da8ce7bf?auto=format&fit=crop&w=1200&q=85",
+    "alt": "Crispy pan-fried momos with juicy vegetable filling",
+    "caption": "Golden pan-fried momos with a crispy outer skin and succulent filling."
   },
   {
     "id": "gal-05",
-    "title": "Chilled Kulhad Lassi Bar",
-    "category": "bar",
-    "image": "https://images.timesnownews.com/photo/msid-153222518/153222518.jpg",
-    "alt": "Fresh churned mango malai lassi in clay kulhad",
-    "caption": "Hand-churned Alphonso mango malai lassi garnished with saffron and almonds."
+    "title": "Charcoal Roasted Tandoori Momos",
+    "category": "food",
+    "image": "https://images.unsplash.com/photo-1567188040759-fb8a883dc6d8?auto=format&fit=crop&w=1200&q=85",
+    "alt": "Smoky clay oven tandoori momos roasted with Indian spices",
+    "caption": "Charcoal roasted tandoori momos tossed in curd marinade, chaat masala, and mint."
   },
   {
     "id": "gal-06",
-    "title": "Traditional Mithai Counter",
-    "category": "dishes",
-    "image": "https://png.pngtree.com/thumb_back/fw800/background/20250720/pngtree-colorful-traditional-mithai-display-for-indian-festivals-image_17621425.webp",
-    "alt": "Freshly prepared hot Gulab Jamun with Rabri",
-    "caption": "Decadent hot Gulab Jamuns paired with thick saffron malai rabri."
+    "title": "Extra Crunchy Kurkure Momos",
+    "category": "food",
+    "image": "https://images.unsplash.com/photo-1601050690597-df0568f70950?auto=format&fit=crop&w=1200&q=85",
+    "alt": "Extra crunchy battered Kurkure momos deep fried",
+    "caption": "Crunchy cornflake battered momos fried to golden perfection."
   },
   {
     "id": "gal-07",
-    "title": "Bespoke Family Banquet Hall",
-    "category": "events",
-    "image": "https://fabriziobanquethall.com/wp-content/uploads/Fabrizio-Banquet-Gallery-04.jpg",
-    "alt": "Grand family celebration hall and lawn event",
-    "caption": "Spacious venue arrangements for weddings, birthdays, and family banquets."
+    "title": "Creamy Malai Afghani Momos",
+    "category": "food",
+    "image": "https://images.unsplash.com/photo-1496116218417-1a781b1c416c?auto=format&fit=crop&w=1200&q=85",
+    "alt": "Rich Afghani malai momos tossed in cream and cashew gravy",
+    "caption": "Rich Afghani momos drenched in thick butter, cream, and aromatic spices."
   },
   {
     "id": "gal-08",
-    "title": "Special Kulhad Masala Chai",
-    "category": "bar",
-    "image": "https://images.unsplash.com/photo-1576092768241-dec231879fc3?auto=format&fit=crop&w=1200&q=85",
-    "alt": "Freshly brewed clay pot masala chai",
-    "caption": "Aromatic spiced tea brewed fresh with ginger and cardamom."
+    "title": "Cheesy Oven Baked Pizza Momos",
+    "category": "food",
+    "image": "https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&w=1200&q=85",
+    "alt": "Fusion oven baked pizza momos topped with mozzarella cheese",
+    "caption": "Fusion Pizza momos baked with oregano, pizza sauce, and melted mozzarella."
+  },
+  {
+    "id": "gal-09",
+    "title": "Fresh Stuffed Paneer & Chicken Momos",
+    "category": "food",
+    "image": "https://images.unsplash.com/photo-1585032226651-759b368d7246?auto=format&fit=crop&w=1200&q=85",
+    "alt": "Handcrafted stuffed paneer and chicken momos",
+    "caption": "Handcrafted momos filled with seasoned cottage cheese or minced chicken."
+  },
+  {
+    "id": "gal-10",
+    "title": "Bamboo Basket Steamed Veg & Chicken Momos",
+    "category": "food",
+    "image": "/images/steamed_momos.jpg",
+    "alt": "Steamed dumplings in traditional bamboo basket with signature red chutney and mayonnaise",
+    "caption": "Piping hot Steamed Veg & Chicken Momos steamed fresh in traditional bamboo baskets."
   }
 ]

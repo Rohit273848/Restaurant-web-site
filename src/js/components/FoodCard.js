@@ -74,16 +74,18 @@ export function renderFoodCard(dish, optionsOrCurrency = '$') {
 
   const isSoldOut = !isAvailable || availability === 'sold-out';
   const currencySymbol = opts.currencySymbol || '$';
-  const fallbackImage = 'https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=800&q=80';
+  const fallbackImage = 'https://images.unsplash.com/photo-1626777552726-4a6b54c97e46?auto=format&fit=crop&w=800&q=80';
   const dishImage = image || fallbackImage;
 
   // Build Badges
   let badgesHtml = '';
   if (opts.showBadges !== false) {
-    if (tags.includes('chef-special')) {
-      badgesHtml += `<span class="px-2.5 py-1 text-[10px] font-bold uppercase tracking-wider bg-brand-gold/90 text-slate-950 rounded-full shadow-sm">Chef's Special</span>`;
-    } else if (tags.includes('popular') || tags.includes('best-seller')) {
-      badgesHtml += `<span class="px-2.5 py-1 text-[10px] font-bold uppercase tracking-wider bg-amber-500/90 text-slate-950 rounded-full shadow-sm">Popular</span>`;
+    if (tags.includes('best-seller')) {
+      badgesHtml += `<span class="px-2.5 py-1 text-[10px] font-bold uppercase tracking-wider bg-amber-500 text-slate-950 rounded-full shadow-sm font-sans">Best Seller</span>`;
+    } else if (tags.includes('chef-special')) {
+      badgesHtml += `<span class="px-2.5 py-1 text-[10px] font-bold uppercase tracking-wider bg-brand-gold/90 text-slate-950 rounded-full shadow-sm font-sans">Chef's Special</span>`;
+    } else if (tags.includes('popular')) {
+      badgesHtml += `<span class="px-2.5 py-1 text-[10px] font-bold uppercase tracking-wider bg-amber-500/90 text-slate-950 rounded-full shadow-sm font-sans">Popular</span>`;
     }
   }
 

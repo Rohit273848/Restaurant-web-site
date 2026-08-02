@@ -1,29 +1,29 @@
 [
   {
     "id": "rev-01",
-    "name": "Marcus Vance",
-    "designation": "Michelin Guide Reviewer",
+    "name": "Rohan Deshmukh",
+    "designation": "Local Foodie (Usmanpura)",
     "rating": 5,
-    "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=200&q=80",
-    "comment": "An extraordinary culinary symphony. The Wagyu Filet Mignon melts on the tongue, and the service achieves perfection without pretense.",
-    "date": "March 2026"
+    "avatar": "https://i.pinimg.com/736x/46/14/26/4614269e7f485a36d5501a673778020b.jpg",
+    "comment": "Best Kurkure Momos and Tandoori Momos in Chhatrapati Sambhajinagar! Super crispy, juicy, and very affordable at ₹150 for two people.",
+    "date": "July 2026"
   },
   {
     "id": "rev-02",
-    "name": "Sophia Reynolds",
-    "designation": "Food & Wine Magazine",
+    "name": "Priya Sharma",
+    "designation": "College Student",
     "rating": 5,
-    "avatar": "https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=200&q=80",
-    "comment": "L'Étoile redefines modern French fine dining. Every dish is a canvas of vibrant flavor and immaculate artistic balance.",
-    "date": "February 2026"
+    "avatar": "https://images.unsplash.com/photo-1622038094167-a2e40e21df17?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "comment": "The Pizza Momos and Afghani Momos here are amazing. Very quick takeaway service and great indoor seating right opposite Golden Quarter.",
+    "date": "June 2026"
   },
   {
     "id": "rev-03",
-    "name": "David Sterling",
-    "designation": "Executive Guest",
+    "name": "Amit Kulkarni",
+    "designation": "Regular Customer",
     "rating": 5,
-    "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=200&q=80",
-    "comment": "Celebrated our 10th anniversary here. The private dining atmosphere, sommelier's pairings, and warm hospitality made it unforgettable.",
-    "date": "January 2026"
+    "avatar": "https://plus.unsplash.com/premium_photo-1691030256264-59cdf9414ed1?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "comment": "Fast home delivery and hot steamed paneer momos. The red garlic chutney dip is authentic Tibetan style!",
+    "date": "June 2026"
   }
 ]

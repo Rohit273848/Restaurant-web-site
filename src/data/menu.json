@@ -1,110 +1,171 @@
 {
   "categories": [
-    { "id": "starters", "name": "Indian Starters & Snacks", "description": "Crispy kebabs, tandoori tikka, and sizzling clay oven appetizers." },
-    { "id": "mains", "name": "Royal Main Curries & Thali", "description": "Rich aromatic Indian gravies, slow-cooked lentils, and butter naans." },
-    { "id": "desserts", "name": "Traditional Indian Sweets", "description": "Authentic handcrafted Indian mithai and chilled desserts." },
-    { "id": "cocktails", "name": "Refreshing Beverages & Lassi", "description": "Traditional kulhad lassi, masala taak, and spiced mocktails." }
+    {
+      "id": "steam-fry",
+      "name": "Steam & Fry Momos",
+      "description": "Authentic Tibetan-style steamed momos and crispy golden deep-fried momos."
+    },
+    {
+      "id": "tandoori-kurkure",
+      "name": "Tandoori & Kurkure Momos",
+      "description": "Smoky charcoal tandoori roasted momos and crunchy battered Kurkure momos."
+    },
+    {
+      "id": "specialty-fusion",
+      "name": "Specialty & Fusion Momos",
+      "description": "Rich Afghani Malai, Cheesy Pizza, Cheese Chilli & Special Cheese momo creations."
+    },
+    {
+      "id": "fries-sides",
+      "name": "French Fries & Snacks",
+      "description": "Crispy golden plain fries and spicy Peri Peri tossed fries."
+    },
+    {
+      "id": "beverages",
+      "name": "Beverages",
+      "description": "Packaged packaged water bottles and refreshing beverages."
+    }
   ],
   "items": [
     {
-      "id": "dish-01",
-      "categoryId": "starters",
-      "title": "Tandoori Paneer Tikka Angara",
-      "description": "Fresh cottage cheese marinated in spiced hung curd and smoked in clay tandoor with bell peppers.",
-      "price": 280.00,
-      "image": "https://images.unsplash.com/photo-1567188040759-fb8a883dc6d8?auto=format&fit=crop&w=800&q=85",
-      "tags": ["chef-special", "popular"],
-      "dietary": { "isVegetarian": true, "isGlutenFree": true, "isVegan": false, "containsNuts": false }
-    },
-    {
-      "id": "dish-02",
-      "categoryId": "starters",
-      "title": "Crispy Hara Bhara Kebab",
-      "description": "Pan-fried spinach, green pea, and potato patties infused with roasted cumin and aromatic herbs.",
-      "price": 220.00,
-      "image": "https://images.unsplash.com/photo-1601050690597-df0568f70950?auto=format&fit=crop&w=800&q=85",
-      "tags": ["popular"],
-      "dietary": { "isVegetarian": true, "isGlutenFree": true, "isVegan": true, "containsNuts": false }
-    },
-    {
-      "id": "dish-03",
-      "categoryId": "starters",
-      "title": "Amritsari Stuffed Kulcha & Chole",
-      "description": "Crispy tandoori kulcha stuffed with spiced potatoes and onions, served with tangy chickpea curry.",
-      "price": 240.00,
-      "image": "https://images.unsplash.com/photo-1626132647523-66f5bf380027?auto=format&fit=crop&w=800&q=85",
+      "id": "momo-sm-01",
+      "categoryId": "steam-fry",
+      "title": "Steam Momos (Veg)",
+      "description": "Authentic Tibetan-style steamed dumplings stuffed with finely minced fresh garden vegetables and mild herbs. Served with spicy red chutney.",
+      "price": 60.00,
+      "image": "/images/steamed_momos.jpg",
       "tags": ["popular"],
       "dietary": { "isVegetarian": true, "isGlutenFree": false, "isVegan": true, "containsNuts": false }
     },
     {
-      "id": "dish-04",
-      "categoryId": "mains",
-      "title": "Chaudhari Special Shahi Paneer Butter Masala",
-      "description": "Soft paneer cubes simmered in a rich tomato, cashew nut cream gravy with fenugreek and butter.",
-      "price": 340.00,
-      "image": "https://images.unsplash.com/photo-1588166524941-3bf61a9c41db?auto=format&fit=crop&w=800&q=85",
-      "tags": ["popular", "chef-special"],
-      "dietary": { "isVegetarian": true, "isGlutenFree": true, "isVegan": false, "containsNuts": true }
+      "id": "momo-sm-02",
+      "categoryId": "steam-fry",
+      "title": "Steam Momos (Paneer)",
+      "description": "Piping hot steamed dumplings stuffed with soft grated cottage cheese, green chillies, and delicate Himalayan spices.",
+      "price": 70.00,
+      "image": "/images/steamed_momos.jpg",
+      "tags": ["popular"],
+      "dietary": { "isVegetarian": true, "isGlutenFree": false, "isVegan": false, "containsNuts": false }
     },
     {
-      "id": "dish-05",
-      "categoryId": "mains",
-      "title": "Dal Makhani Royal",
-      "description": "Slow-cooked black lentils simmered overnight with butter, cream, and aromatic Indian spices.",
-      "price": 290.00,
-      "image": "https://images.unsplash.com/photo-1626777552726-4a6b54c97e46?auto=format&fit=crop&w=800&q=85",
+      "id": "momo-sm-03",
+      "categoryId": "steam-fry",
+      "title": "Steam Momos (Chicken)",
+      "description": "Steamed dumplings stuffed with tender minced chicken, scallions, garlic, and freshly cracked black pepper.",
+      "price": 70.00,
+      "image": "/images/steamed_momos.jpg",
+      "tags": ["chef-special", "popular"],
+      "dietary": { "isVegetarian": false, "isGlutenFree": false, "isVegan": false, "containsNuts": false }
+    },
+    {
+      "id": "momo-fr-01",
+      "categoryId": "steam-fry",
+      "title": "Fry Momos (Veg / Paneer / Chicken)",
+      "description": "Crispy golden deep-fried momos with a crunchy outer layer and savory filling inside. Served with mayo and hot chutney.",
+      "price": 70.00,
+      "image": "/images/crispy_fried_momos.jpg",
+      "tags": ["popular"],
+      "dietary": { "isVegetarian": true, "isGlutenFree": false, "isVegan": false, "containsNuts": false }
+    },
+    {
+      "id": "momo-td-01",
+      "categoryId": "tandoori-kurkure",
+      "title": "Tandoori Momos",
+      "description": "Tossed in spicy yogurt tandoori marinade, roasted over charcoal, and sprinkled with chaat masala and fresh coriander.",
+      "price": 70.00,
+      "image": "/images/tandoori_momos.jpg",
+      "tags": ["best-seller", "popular"],
+      "dietary": { "isVegetarian": true, "isGlutenFree": false, "isVegan": false, "containsNuts": false }
+    },
+    {
+      "id": "momo-td-02",
+      "categoryId": "tandoori-kurkure",
+      "title": "Special Tandoori Masala Momos",
+      "description": "Chef's special double-spiced tandoori masala momos charred in clay oven with butter and tangy onions.",
+      "price": 100.00,
+      "image": "/images/tandoori_momos.jpg",
       "tags": ["chef-special"],
-      "dietary": { "isVegetarian": true, "isGlutenFree": true, "isVegan": false, "containsNuts": false }
+      "dietary": { "isVegetarian": true, "isGlutenFree": false, "isVegan": false, "containsNuts": false }
     },
     {
-      "id": "dish-06",
-      "categoryId": "mains",
-      "title": "Hyderabadi Veg Dum Biryani",
-      "description": "Fragrant basmati rice layered with garden vegetables, saffron, mint, and fried onions served with raita.",
-      "price": 320.00,
-      "image": "https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?auto=format&fit=crop&w=800&q=85",
-      "tags": ["popular"],
-      "dietary": { "isVegetarian": true, "isGlutenFree": true, "isVegan": false, "containsNuts": true }
+      "id": "momo-kk-01",
+      "categoryId": "tandoori-kurkure",
+      "title": "Kurkure Momos",
+      "description": "Coated in crunchy cornflake batter and deep-fried to create an irresistible extra crunchy texture.",
+      "price": 100.00,
+      "image": "/images/kurkure_momos.jpg",
+      "tags": ["best-seller", "popular"],
+      "dietary": { "isVegetarian": true, "isGlutenFree": false, "isVegan": false, "containsNuts": false }
     },
     {
-      "id": "dish-07",
-      "categoryId": "desserts",
-      "title": "Hot Gulab Jamun with Shahi Rabri",
-      "description": "Warm fried milk dumplings soaked in cardamom sugar syrup, topped with thick saffron rabri.",
-      "price": 160.00,
-      "image": "https://images.unsplash.com/photo-1605197586548-06a888d3b1b3?auto=format&fit=crop&w=800&q=85",
-      "tags": ["popular"],
+      "id": "momo-sp-01",
+      "categoryId": "specialty-fusion",
+      "title": "Cheese Chilli Momos",
+      "description": "Spicy chilli garlic momos smothered in melted cheese and garnished with sliced capsicum and green chillies.",
+      "price": 120.00,
+      "image": "/images/crispy_fried_momos.jpg",
+      "tags": ["best-seller", "popular"],
+      "dietary": { "isVegetarian": true, "isGlutenFree": false, "isVegan": false, "containsNuts": false }
+    },
+    {
+      "id": "momo-sp-02",
+      "categoryId": "specialty-fusion",
+      "title": "Special Cheese Momos",
+      "description": "Loaded with rich processed and mozzarella cheese filling that melts in your mouth.",
+      "price": 120.00,
+      "image": "/images/steamed_momos.jpg",
+      "tags": ["best-seller", "popular"],
+      "dietary": { "isVegetarian": true, "isGlutenFree": false, "isVegan": false, "containsNuts": false }
+    },
+    {
+      "id": "momo-af-01",
+      "categoryId": "specialty-fusion",
+      "title": "Afghani Malai Momos",
+      "description": "Momos drenched in rich cashew malai cream sauce, butter, herbs, and delicate white pepper.",
+      "price": 130.00,
+      "image": "/images/afghani_malai_momos.jpg",
+      "tags": ["best-seller", "chef-special"],
       "dietary": { "isVegetarian": true, "isGlutenFree": false, "isVegan": false, "containsNuts": true }
     },
     {
-      "id": "dish-08",
-      "categoryId": "desserts",
-      "title": "Kesari Rasmalai",
-      "description": "Soft cottage cheese patties immersed in chilled saffron milk enriched with pistachio and almonds.",
-      "price": 180.00,
-      "image": "https://images.unsplash.com/photo-1541781774459-bb2af2f05b55?auto=format&fit=crop&w=800&q=85",
-      "tags": ["chef-special"],
-      "dietary": { "isVegetarian": true, "isGlutenFree": true, "isVegan": false, "containsNuts": true }
-    },
-    {
-      "id": "dish-09",
-      "categoryId": "cocktails",
-      "title": "Royal Mango Malai Lassi",
-      "description": "Thick churned sweet yogurt drink blended with Alphonso mango pulp and garnished with dry fruits.",
+      "id": "momo-pz-01",
+      "categoryId": "specialty-fusion",
+      "title": "Pizza Momos",
+      "description": "Fusion favorite! Baked momos topped with rich pizza sauce, sweet corn, oregano, and gooey melted mozzarella.",
       "price": 140.00,
-      "image": "https://images.unsplash.com/photo-1571006682858-a458b8a1628f?auto=format&fit=crop&w=800&q=85",
-      "tags": ["popular"],
-      "dietary": { "isVegetarian": true, "isGlutenFree": true, "isVegan": false, "containsNuts": true }
+      "image": "/images/pizza_momos.jpg",
+      "tags": ["best-seller", "popular"],
+      "dietary": { "isVegetarian": true, "isGlutenFree": false, "isVegan": false, "containsNuts": false }
     },
     {
-      "id": "dish-10",
-      "categoryId": "cocktails",
-      "title": "Special Kulhad Masala Chai",
-      "description": "Aromatic Indian tea brewed with cardamom, ginger, cloves, and whole milk served in traditional clay pot.",
-      "price": 80.00,
-      "image": "https://images.unsplash.com/photo-1576092768241-dec231879fc3?auto=format&fit=crop&w=800&q=85",
+      "id": "momo-ff-01",
+      "categoryId": "fries-sides",
+      "title": "Plain French Fries",
+      "description": "Crispy golden deep-fried potato fries salted to perfection.",
+      "price": 100.00,
+      "image": "/images/peri_peri_fries.jpg",
       "tags": [],
-      "dietary": { "isVegetarian": true, "isGlutenFree": true, "isVegan": false, "containsNuts": false }
+      "dietary": { "isVegetarian": true, "isGlutenFree": true, "isVegan": true, "containsNuts": false }
+    },
+    {
+      "id": "momo-ff-02",
+      "categoryId": "fries-sides",
+      "title": "Peri Peri French Fries",
+      "description": "Crispy potato fries tossed in spicy and tangy Peri Peri seasoning.",
+      "price": 120.00,
+      "image": "/images/peri_peri_fries.jpg",
+      "tags": ["popular"],
+      "dietary": { "isVegetarian": true, "isGlutenFree": true, "isVegan": true, "containsNuts": false }
+    },
+    {
+      "id": "momo-bv-01",
+      "categoryId": "beverages",
+      "title": "Packaged Water Bottle",
+      "description": "Chilled 1 Liter packaged drinking water bottle.",
+      "price": 20.00,
+      "image": "/images/steamed_momos.jpg",
+      "tags": [],
+      "dietary": { "isVegetarian": true, "isGlutenFree": true, "isVegan": true, "containsNuts": false }
     }
   ]
 }

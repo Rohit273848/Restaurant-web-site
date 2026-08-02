@@ -1,46 +1,90 @@
 {
   "brand": {
-    "name": "Hotel Chaudhari Garden",
-    "shortName": "Chaudhari Garden",
-    "tagline": "Authentic Garden Dining & Grand Hospitality",
-    "established": 2012,
+    "name": "Sapna Momos",
+    "shortName": "Sapna Momos",
+    "tagline": "So Fresh So Yummy",
+    "motto": "Taste You Can Dream Of...",
+    "subTagline": "Authentic Tibetan, Nepalese & Fusion Momos",
+    "logo": "/images/logo.png",
+    "favicon": "/images/logo.png",
+    "storefrontImage": "/images/storefront.jpg",
+    "established": 2018,
     "currencySymbol": "₹",
     "currencyCode": "INR",
+    "approxCostForTwo": "₹150 for two people",
     "theme": {
-      "primaryColor": "#C5A880",
-      "primaryDark": "#A88B63",
-      "darkBg": "#0B0F17",
-      "accentColor": "#D4AF37"
+      "primaryColor": "#FFC107",
+      "primaryDark": "#FFA000",
+      "accentColor": "#FF1744",
+      "darkBg": "#0B0F17"
     }
   },
   "contact": {
-    "phone": "+91 98230 12345",
-    "email": "reservations@chaudharigarden.com",
+    "phone": "+91 99600 50806",
+    "alternatePhones": [
+      "+91 95032 84534",
+      "+91 97664 26035"
+    ],
+    "whatsapp": "+91 99600 50806",
+    "email": "contact@sapnamomos.com [Placeholder: Owner to update]",
+    "reservationNumber": "+91 99600 50806",
     "address": {
-      "street": "National Highway 53, Near Varangaon",
-      "neighborhood": "Bhusawal - Jalgaon Highway",
-      "city": "Jalgaon",
+      "shop": "Shop No 6",
+      "building": "near Dashmish Mandir",
+      "street": "Jyoti Nagar",
+      "neighborhood": "New Usmanpura",
+      "city": "Chhatrapati Sambhajinagar",
       "state": "Maharashtra",
-      "zip": "425305",
-      "country": "India"
+      "pincode": "431005",
+      "fullAddress": "Shop No 6, near Dashmish Mandir, Jyoti Nagar, New Usmanpura, Chhatrapati Sambhajinagar, Maharashtra 431005"
     },
-    "mapsUrl": "https://maps.app.goo.gl/C1vKWaYPsT1ViTCZ7",
-    "mapEmbedUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3725.105!2d75.7824106!3d20.8016159!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bd99fa4ad1e0741%3A0xd64bb093af7ca827!2sHOTEL%20CHAUDHARI%20GARDAN!5e0!3m2!1sen!2sin!4v1700000000000"
+    "mapsUrl": "https://www.google.com/maps/place/Sapna+Momos/@19.866113,75.3290506,217m/data=!3m2!1e3!4b1!4m6!3m5!1s0x3bdb9960c9dde745:0xf6ff91f838cde0a4!8m2!3d19.866113!4d75.3296957!16s%2Fg%2F11pz0pywdp?entry=ttu&g_ep=EgoyMDI2MDcyOS4wIKXMDSoASAFQAw%3D%3D",
+    "mapEmbedUrl": "https://maps.google.com/maps?q=19.866113,75.3296957&z=17&output=embed"
   },
   "social": {
-    "instagram": "https://instagram.com",
-    "facebook": "https://facebook.com",
-    "tripadvisor": "https://tripadvisor.com"
+    "instagram": "# [Placeholder: Owner to insert Instagram link]",
+    "facebook": "# [Placeholder: Owner to insert Facebook link]",
+    "whatsapp": "https://wa.me/919960050806"
   },
-  "operatingHours": [
-    { "days": "Monday – Thursday", "dinner": "11:00 AM – 11:00 PM", "lunch": "11:00 AM – 3:30 PM" },
-    { "days": "Friday – Saturday", "dinner": "11:00 AM – 11:30 PM", "lunch": "11:00 AM – 4:00 PM" },
-    { "days": "Sunday", "dinner": "11:00 AM – 11:30 PM", "lunch": "11:00 AM – 4:00 PM" }
+  "operatingHours": {
+    "days": "Open Daily",
+    "hours": "12:00 PM – 10:30 PM",
+    "display": "12:00 PM – 10:30 PM (Hours may vary by day)",
+    "note": "Open daily for lunch, evening snacks & dinner."
+  },
+  "facilities": [
+    "Dine-in",
+    "Takeaway",
+    "Home Delivery",
+    "Indoor Seating",
+    "Free Parking"
   ],
+  "cuisines": [
+    "Momos",
+    "Fast Food",
+    "Tibetan",
+    "Nepalese",
+    "Fusion"
+  ],
+  "ratingInfo": {
+    "score": 4.8,
+    "maxScore": 5.0,
+    "reviewCount": 120,
+    "platform": "Customer Reviews",
+    "displaySummary": "Highly rated by momo lovers for Kurkure, Tandoori & Afghani Momos."
+  },
   "stats": [
-    { "value": "14+", "label": "Years of Excellence" },
-    { "value": "4.8★", "label": "Guest Rating" },
-    { "value": "60+", "label": "Specialty Dishes" },
-    { "value": "100K+", "label": "Happy Guests" }
+    { "value": "₹150", "label": "For Two People" },
+    { "value": "100%", "label": "Freshly Steamed & Prepared" },
+    { "value": "9+", "label": "Momo Varieties" },
+    { "value": "5★", "label": "Customer Satisfaction" }
+  ],
+  "highlights": [
+    "Steamed & Fried Momos",
+    "Tandoori & Kurkure Momos",
+    "Afghani & Pizza Momos",
+    "Paneer, Cheese & Chicken Options",
+    "Dine-in, Takeaway & Delivery",
+    "Free Parking Available"
   ]
 }
