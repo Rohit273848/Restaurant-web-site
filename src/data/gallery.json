@@ -11,72 +11,72 @@
     "id": "gal-02",
     "title": "Indoor Dining & Seating Area",
     "category": "interior",
-    "image": "/images/storefront.jpg",
+    "image": "/images/interior.jpg",
     "alt": "Clean indoor seating and dining area at Sapna Momos outlet",
-    "caption": "Spacious indoor seating area for families and friends enjoying hot momos."
+    "caption": "Comfortable indoor seating with a warm ambience for families and friends to enjoy freshly prepared momos."
   },
   {
     "id": "gal-03",
-    "title": "Steamed Veg & Chicken Momos Basket",
+    "title": "Steamed Veg & Chicken Momos",
     "category": "food",
     "image": "/images/steamed_momos.jpg",
-    "alt": "Freshly steamed veg and chicken momos in traditional bamboo steamer basket with red chutney and mayo",
-    "caption": "Piping hot Steamed Veg & Chicken Momos served fresh in a traditional bamboo basket with spicy garlic chutney and mayo dips."
+    "alt": "Freshly steamed veg and chicken momos served in a bamboo basket with spicy chutney",
+    "caption": "Freshly steamed soft momos served with signature spicy garlic chutney and creamy mayonnaise."
   },
   {
     "id": "gal-04",
-    "title": "Golden Pan-Fried Crispy Momos",
+    "title": "Golden Fry Momos",
     "category": "food",
-    "image": "https://images.unsplash.com/photo-1541696432-82c6da8ce7bf?auto=format&fit=crop&w=1200&q=85",
-    "alt": "Crispy pan-fried momos with juicy vegetable filling",
-    "caption": "Golden pan-fried momos with a crispy outer skin and succulent filling."
+    "image": "/images/fry_momos.jpg",
+    "alt": "Golden crispy fried momos served with spicy dip",
+    "caption": "Perfectly fried momos with a crispy golden exterior and juicy filling."
   },
   {
     "id": "gal-05",
-    "title": "Charcoal Roasted Tandoori Momos",
+    "title": "Smoky Tandoori Momos",
     "category": "food",
-    "image": "https://images.unsplash.com/photo-1567188040759-fb8a883dc6d8?auto=format&fit=crop&w=1200&q=85",
-    "alt": "Smoky clay oven tandoori momos roasted with Indian spices",
-    "caption": "Charcoal roasted tandoori momos tossed in curd marinade, chaat masala, and mint."
+    "image": "/images/tandoori_momos.jpg",
+    "alt": "Smoky tandoori momos grilled with Indian spices",
+    "caption": "Clay oven roasted tandoori momos coated with rich spices and served with mint chutney."
   },
   {
     "id": "gal-06",
     "title": "Extra Crunchy Kurkure Momos",
     "category": "food",
-    "image": "https://images.unsplash.com/photo-1601050690597-df0568f70950?auto=format&fit=crop&w=1200&q=85",
-    "alt": "Extra crunchy battered Kurkure momos deep fried",
-    "caption": "Crunchy cornflake battered momos fried to golden perfection."
+    "image": "/images/kurkure_momos.jpg",
+    "alt": "Crunchy kurkure momos coated with crispy crumbs",
+    "caption": "Signature Kurkure Momos coated with a crunchy golden crust for an irresistible bite."
   },
   {
     "id": "gal-07",
-    "title": "Creamy Malai Afghani Momos",
+    "title": "Creamy Afghani Malai Momos",
     "category": "food",
-    "image": "https://images.unsplash.com/photo-1496116218417-1a781b1c416c?auto=format&fit=crop&w=1200&q=85",
-    "alt": "Rich Afghani malai momos tossed in cream and cashew gravy",
-    "caption": "Rich Afghani momos drenched in thick butter, cream, and aromatic spices."
+    "image": "/images/afghani_malai_momos.jpg",
+    "alt": "Creamy Afghani Malai Momos topped with rich white sauce",
+    "caption": "Rich and creamy Afghani Malai Momos prepared with butter, fresh cream, and aromatic spices."
   },
   {
     "id": "gal-08",
-    "title": "Cheesy Oven Baked Pizza Momos",
+    "title": "Cheesy Pizza Momos",
     "category": "food",
-    "image": "https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&w=1200&q=85",
-    "alt": "Fusion oven baked pizza momos topped with mozzarella cheese",
-    "caption": "Fusion Pizza momos baked with oregano, pizza sauce, and melted mozzarella."
+    "image": "/images/pizza_momos.jpg",
+    "alt": "Pizza momos topped with melted mozzarella cheese",
+    "caption": "Fusion-style Pizza Momos loaded with mozzarella cheese, pizza sauce, herbs, and vegetables."
   },
   {
     "id": "gal-09",
-    "title": "Fresh Stuffed Paneer & Chicken Momos",
+    "title": "Special Cheese Momos",
     "category": "food",
-    "image": "https://images.unsplash.com/photo-1585032226651-759b368d7246?auto=format&fit=crop&w=1200&q=85",
-    "alt": "Handcrafted stuffed paneer and chicken momos",
-    "caption": "Handcrafted momos filled with seasoned cottage cheese or minced chicken."
+    "image": "/images/special_cheese_momos.jpg",
+    "alt": "Special cheese momos filled with melted cheese",
+    "caption": "Cheese-filled momos with a rich, creamy center and perfectly steamed wrapper."
   },
   {
     "id": "gal-10",
-    "title": "Bamboo Basket Steamed Veg & Chicken Momos",
+    "title": "Cheese Chilli Momos",
     "category": "food",
-    "image": "/images/steamed_momos.jpg",
-    "alt": "Steamed dumplings in traditional bamboo basket with signature red chutney and mayonnaise",
-    "caption": "Piping hot Steamed Veg & Chicken Momos steamed fresh in traditional bamboo baskets."
+    "image": "/images/cheese_chilli_momos.jpg",
+    "alt": "Cheese chilli momos tossed in spicy chilli sauce",
+    "caption": "Soft momos coated in spicy chilli sauce and melted cheese for the perfect balance of heat and creaminess."
   }
 ]
