@@ -1,22 +1,27 @@
 [
   {
     "id": "faq-01",
-    "question": "What is the dress code policy at L'Étoile?",
-    "answer": "We encourage Smart Casual to Elegant attire. We kindly request guests refrain from wearing athletic wear, beachwear, or flip-flops in the main dining room."
+    "question": "What are the specialty momo dishes at Sapna Momos?",
+    "answer": "Our most popular menu highlights include Kurkure Momos, Tandoori Momos, Afghani Malai Momos, Pizza Momos, Steamed Momos, Fried Momos, Paneer Momos, Cheese Momos, and Chicken Momos."
   },
   {
     "id": "faq-02",
-    "question": "How far in advance can I make a table reservation?",
-    "answer": "Table reservations open 30 days in advance at midnight EST. For private dining events or large parties exceeding 8 guests, please contact our concierge team directly."
+    "question": "Where is Sapna Momos located in Chhatrapati Sambhajinagar?",
+    "answer": "We are located at Shop No 6, near Dashmish Mandir, Jyoti Nagar, New Usmanpura, Chhatrapati Sambhajinagar, Maharashtra 431005."
   },
   {
     "id": "faq-03",
-    "question": "Do you accommodate severe food allergies and dietary restrictions?",
-    "answer": "Absolutely. Our culinary team can customize tasting menus for vegan, vegetarian, gluten-free, and nut-sensitive guests. Please notify us during the booking step."
+    "question": "What is the average cost for two people?",
+    "answer": "The approximate cost is around ₹150 for two people at our Usmanpura outlet, making it a very affordable fast-food destination."
   },
   {
     "id": "faq-04",
-    "question": "Is valet parking available on-site?",
-    "answer": "Yes, complimentary valet parking is offered at our main entrance on Evergreen Terrace from 4:30 PM until closing daily."
+    "question": "What facilities and services are available?",
+    "answer": "We offer Dine-in, Takeaway, Home Delivery, Indoor Seating, and Free Parking facilities."
+  },
+  {
+    "id": "faq-05",
+    "question": "What are the opening hours?",
+    "answer": "Sapna Momos is generally open daily from 12:00 PM to 10:30 PM (hours can vary slightly by day). Contact us at +91 99600 50806 for direct inquiries."
   }
 ]

@@ -1,66 +1,82 @@
 [
   {
     "id": "gal-01",
-    "title": "Chaudhari Open Garden Lawn",
-    "category": "interior",
-    "image": "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1200&q=85",
-    "alt": "Hotel Chaudhari Garden ambient outdoor dining lawn",
-    "caption": "Spacious open garden dining lawn with warm ambient lighting for family gatherings."
+    "title": "Sapna Momos Storefront (Day & Night View)",
+    "category": "exterior",
+    "image": "/images/storefront.jpg",
+    "alt": "Sapna Momos official shopfront illuminated day and night view in Usmanpura",
+    "caption": "Official Sapna Momos shopfront in Usmanpura showing daytime entrance and night-time glowing signboard."
   },
   {
     "id": "gal-02",
-    "title": "Shahi Paneer & Naan Plating",
-    "category": "dishes",
-    "image": "https://images.unsplash.com/photo-1588166524941-3bf61a9c41db?auto=format&fit=crop&w=1200&q=85",
-    "alt": "Shahi Paneer Butter Masala served with butter naan",
-    "caption": "Rich Paneer Butter Masala served fresh with tandoori garlic naan."
+    "title": "Indoor Dining & Seating Area",
+    "category": "interior",
+    "image": "/images/interior.jpg",
+    "alt": "Clean indoor seating and dining area at Sapna Momos outlet",
+    "caption": "Comfortable indoor seating with a warm ambience for families and friends to enjoy freshly prepared momos."
   },
   {
     "id": "gal-03",
-    "title": "Authentic Clay Tandoor Kitchen",
-    "category": "chef",
-    "image": "https://images.unsplash.com/photo-1567188040759-fb8a883dc6d8?auto=format&fit=crop&w=1200&q=85",
-    "alt": "Master tandoori chef roasting paneer tikka angara",
-    "caption": "Live tandoori oven preparation by our senior Indian master chefs."
+    "title": "Steamed Veg & Chicken Momos",
+    "category": "food",
+    "image": "/images/steamed_momos.jpg",
+    "alt": "Freshly steamed veg and chicken momos served in a bamboo basket with spicy chutney",
+    "caption": "Freshly steamed soft momos served with signature spicy garlic chutney and creamy mayonnaise."
   },
   {
     "id": "gal-04",
-    "title": "Royal Hyderabadi Biryani Handi",
-    "category": "dishes",
-    "image": "https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?auto=format&fit=crop&w=1200&q=85",
-    "alt": "Aromatic Dum Biryani handi presentation",
-    "caption": "Slow dum-cooked veg biryani served with authentic mint burani raita."
+    "title": "Golden Fry Momos",
+    "category": "food",
+    "image": "/images/fry_momos.jpg",
+    "alt": "Golden crispy fried momos served with spicy dip",
+    "caption": "Perfectly fried momos with a crispy golden exterior and juicy filling."
   },
   {
     "id": "gal-05",
-    "title": "Chilled Kulhad Lassi Bar",
-    "category": "bar",
-    "image": "https://images.timesnownews.com/photo/msid-153222518/153222518.jpg",
-    "alt": "Fresh churned mango malai lassi in clay kulhad",
-    "caption": "Hand-churned Alphonso mango malai lassi garnished with saffron and almonds."
+    "title": "Smoky Tandoori Momos",
+    "category": "food",
+    "image": "/images/tandoori_momos.jpg",
+    "alt": "Smoky tandoori momos grilled with Indian spices",
+    "caption": "Clay oven roasted tandoori momos coated with rich spices and served with mint chutney."
   },
   {
     "id": "gal-06",
-    "title": "Traditional Mithai Counter",
-    "category": "dishes",
-    "image": "https://png.pngtree.com/thumb_back/fw800/background/20250720/pngtree-colorful-traditional-mithai-display-for-indian-festivals-image_17621425.webp",
-    "alt": "Freshly prepared hot Gulab Jamun with Rabri",
-    "caption": "Decadent hot Gulab Jamuns paired with thick saffron malai rabri."
+    "title": "Extra Crunchy Kurkure Momos",
+    "category": "food",
+    "image": "/images/kurkure_momos.jpg",
+    "alt": "Crunchy kurkure momos coated with crispy crumbs",
+    "caption": "Signature Kurkure Momos coated with a crunchy golden crust for an irresistible bite."
   },
   {
     "id": "gal-07",
-    "title": "Bespoke Family Banquet Hall",
-    "category": "events",
-    "image": "https://fabriziobanquethall.com/wp-content/uploads/Fabrizio-Banquet-Gallery-04.jpg",
-    "alt": "Grand family celebration hall and lawn event",
-    "caption": "Spacious venue arrangements for weddings, birthdays, and family banquets."
+    "title": "Creamy Afghani Malai Momos",
+    "category": "food",
+    "image": "/images/afghani_malai_momos.jpg",
+    "alt": "Creamy Afghani Malai Momos topped with rich white sauce",
+    "caption": "Rich and creamy Afghani Malai Momos prepared with butter, fresh cream, and aromatic spices."
   },
   {
     "id": "gal-08",
-    "title": "Special Kulhad Masala Chai",
-    "category": "bar",
-    "image": "https://images.unsplash.com/photo-1576092768241-dec231879fc3?auto=format&fit=crop&w=1200&q=85",
-    "alt": "Freshly brewed clay pot masala chai",
-    "caption": "Aromatic spiced tea brewed fresh with ginger and cardamom."
+    "title": "Cheesy Pizza Momos",
+    "category": "food",
+    "image": "/images/pizza_momos.jpg",
+    "alt": "Pizza momos topped with melted mozzarella cheese",
+    "caption": "Fusion-style Pizza Momos loaded with mozzarella cheese, pizza sauce, herbs, and vegetables."
+  },
+  {
+    "id": "gal-09",
+    "title": "Special Cheese Momos",
+    "category": "food",
+    "image": "/images/special_cheese_momos.jpg",
+    "alt": "Special cheese momos filled with melted cheese",
+    "caption": "Cheese-filled momos with a rich, creamy center and perfectly steamed wrapper."
+  },
+  {
+    "id": "gal-10",
+    "title": "Cheese Chilli Momos",
+    "category": "food",
+    "image": "/images/cheese_chilli_momos.jpg",
+    "alt": "Cheese chilli momos tossed in spicy chilli sauce",
+    "caption": "Soft momos coated in spicy chilli sauce and melted cheese for the perfect balance of heat and creaminess."
   }
 ]

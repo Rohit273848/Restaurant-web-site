@@ -1,24 +1,24 @@
 @layer components {
   /* Button Abstractions */
   .btn-primary {
-    @apply inline-flex items-center justify-center gap-2 px-7 py-3.5 bg-brand-gold text-slate-950 font-semibold rounded-md tracking-wide shadow-gold-glow hover:bg-brand-gold-dark hover:shadow-lg transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-brand-gold focus:ring-offset-2 focus:ring-offset-slate-950 disabled:opacity-50 disabled:cursor-not-allowed;
+    @apply inline-flex items-center justify-center gap-2 min-h-[44px] px-6 sm:px-7 py-3 bg-brand-gold text-slate-950 font-semibold rounded-lg tracking-wide shadow-gold-glow hover:bg-brand-gold-dark hover:shadow-lg transition-all duration-300 focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-gold focus-visible:ring-offset-2 focus-visible:ring-offset-slate-950 disabled:opacity-50 disabled:cursor-not-allowed select-none;
   }
 
   .btn-secondary {
-    @apply inline-flex items-center justify-center gap-2 px-7 py-3.5 bg-transparent border-2 border-brand-gold text-brand-gold font-semibold rounded-md tracking-wide hover:bg-brand-gold hover:text-slate-950 transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-brand-gold focus:ring-offset-2 focus:ring-offset-slate-950 disabled:opacity-50 disabled:cursor-not-allowed;
+    @apply inline-flex items-center justify-center gap-2 min-h-[44px] px-6 sm:px-7 py-3 bg-transparent border-2 border-brand-gold text-brand-gold font-semibold rounded-lg tracking-wide hover:bg-brand-gold hover:text-slate-950 transition-all duration-300 focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-gold focus-visible:ring-offset-2 focus-visible:ring-offset-slate-950 disabled:opacity-50 disabled:cursor-not-allowed select-none;
   }
 
   .btn-outline-white {
-    @apply inline-flex items-center justify-center gap-2 px-7 py-3.5 bg-transparent border-2 border-white/30 text-white font-medium rounded-md hover:bg-white/10 hover:border-white transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-slate-950;
+    @apply inline-flex items-center justify-center gap-2 min-h-[44px] px-6 sm:px-7 py-3 bg-transparent border-2 border-white/30 text-white font-medium rounded-lg hover:bg-white/10 hover:border-white transition-all duration-300 focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-slate-950 select-none;
   }
 
   .btn-icon {
-    @apply inline-flex items-center justify-center p-3 rounded-full bg-brand-dark-card border border-brand-dark-border text-brand-gold hover:bg-brand-gold hover:text-slate-950 transition-all duration-300;
+    @apply inline-flex items-center justify-center min-w-[44px] min-h-[44px] p-3 rounded-full bg-brand-dark-card border border-brand-dark-border text-brand-gold hover:bg-brand-gold hover:text-slate-950 transition-all duration-300 focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-gold;
   }
 
   /* Card Components */
   .food-card {
-    @apply bg-brand-dark-card border border-brand-dark-border rounded-xl overflow-hidden shadow-dark-card hover:border-brand-gold transition-all duration-300 flex flex-col;
+    @apply bg-brand-dark-card border border-brand-dark-border rounded-xl overflow-hidden shadow-dark-card hover:border-brand-gold transition-all duration-300 flex flex-col h-full justify-between;
   }
 
   /* Section Dividers & Headlines */
@@ -32,11 +32,11 @@
 
   /* Input & Form Controls */
   .form-input {
-    @apply w-full px-4 py-3 bg-brand-dark border border-brand-dark-border text-slate-100 placeholder-slate-500 rounded-lg focus:outline-none focus:border-brand-gold focus:ring-1 focus:ring-brand-gold transition-all duration-200;
+    @apply w-full min-h-[44px] px-4 py-3 bg-brand-dark border border-brand-dark-border text-slate-100 placeholder-slate-500 rounded-lg focus:outline-none focus:border-brand-gold focus:ring-1 focus:ring-brand-gold transition-all duration-200;
   }
 
   .form-select {
-    @apply w-full px-4 py-3 bg-brand-dark border border-brand-dark-border text-slate-100 rounded-lg focus:outline-none focus:border-brand-gold focus:ring-1 focus:ring-brand-gold transition-all duration-200 cursor-pointer;
+    @apply w-full min-h-[44px] px-4 py-3 bg-brand-dark border border-brand-dark-border text-slate-100 rounded-lg focus:outline-none focus:border-brand-gold focus:ring-1 focus:ring-brand-gold transition-all duration-200 cursor-pointer;
   }
 
   .form-label {
@@ -53,13 +53,14 @@
   }
 }
 
-/* Custom Swiper Pagination Overrides */
+/* Custom Swiper Pagination & Navigation Overrides */
 .swiper-pagination-bullet {
   background: rgba(197, 168, 128, 0.4) !important;
   opacity: 1 !important;
   width: 10px !important;
   height: 10px !important;
   transition: all 0.3s ease !important;
+  cursor: pointer !important;
 }
 
 .swiper-pagination-bullet-active {
@@ -67,3 +68,22 @@
   width: 28px !important;
   border-radius: 6px !important;
 }
+
+.swiper-button-prev,
+.swiper-button-next {
+  width: 44px !important;
+  height: 44px !important;
+  border-radius: 50% !important;
+  background: transparent !important;
+  border: none !important;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+  box-shadow: none !important;
+}
+
+.swiper-button-prev:after,
+.swiper-button-next:after {
+  font-size: 16px !important;
+  font-weight: bold !important;
+}
+
