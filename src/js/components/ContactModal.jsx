@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef, useCallback } from 'react';
 import ReactDOM from 'react-dom';
+import emailjs from '@emailjs/browser';
 import {
   X,
   User,
@@ -82,6 +83,7 @@ export default function ContactModal({
 
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSubmitted, setIsSubmitted] = useState(false);
+  const [submitError, setSubmitError] = useState(null);
   const [isMounted, setIsMounted] = useState(false);
   const [animateIn, setAnimateIn] = useState(false);
 
@@ -162,9 +164,43 @@ export default function ContactModal({
     setErrors(prev => ({ ...prev, [name]: fieldError }));
   };
 
-  // Handle Form Submit
-  const handleSubmit = (e) => {
+  // Reset form state helper
+  const resetForm = () => {
+    setFormData({
+      name: '',
+      phone: '',
+      email: '',
+      subject: '',
+      message: ''
+    });
+    setTouched({
+      name: false,
+      phone: false,
+      email: false,
+      subject: false,
+      message: false
+    });
+    setErrors({
+      name: null,
+      phone: null,
+      email: null,
+      subject: null,
+      message: null
+    });
+    setSubmitError(null);
+  };
+
+  // Handle Close & Reset
+  const handleCloseModal = () => {
+    setIsSubmitted(false);
+    resetForm();
+    if (onClose) onClose();
+  };
+
+  // Handle Form Submit via EmailJS
+  const handleSubmit = async (e) => {
     e.preventDefault();
+    setSubmitError(null);
 
     setTouched({
       name: true,
@@ -181,38 +217,39 @@ export default function ContactModal({
 
     setIsSubmitting(true);
 
-    // Simulate API Submission delay
-    setTimeout(() => {
+    try {
+      // EmailJS credentials from environment variables
+      const serviceId = import.meta.env.VITE_EMAILJS_SERVICE_ID;
+      const templateId = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
+      const publicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
+
+      const submissionTime = new Date().toLocaleString('en-US', {
+        dateStyle: 'full',
+        timeStyle: 'short'
+      });
+
+      // Prepare EmailJS template parameters matching required fields
+      const templateParams = {
+        customer_name: formData.name.trim(),
+        customer_phone: formData.phone.trim(),
+        customer_email: formData.email.trim() || 'Not provided',
+        customer_subject: formData.subject.trim() || 'General Inquiry',
+        customer_message: formData.message.trim(),
+        submission_time: submissionTime
+      };
+
+      // Send email via official @emailjs/browser package
+      await emailjs.send(serviceId, templateId, templateParams, publicKey);
+
+      // On Success
+      resetForm();
       setIsSubmitting(false);
       setIsSubmitted(true);
-
-      // Auto-reset form & close after 3.5 seconds
-      setTimeout(() => {
-        setFormData({
-          name: '',
-          phone: '',
-          email: '',
-          subject: '',
-          message: ''
-        });
-        setTouched({
-          name: false,
-          phone: false,
-          email: false,
-          subject: false,
-          message: false
-        });
-        setErrors({
-          name: null,
-          phone: null,
-          email: null,
-          subject: null,
-          message: null
-        });
-        setIsSubmitted(false);
-        if (onClose) onClose();
-      }, 3500);
-    }, 1200);
+    } catch (error) {
+      console.error('[EmailJS Error]:', error);
+      setIsSubmitting(false);
+      setSubmitError('Unable to send your message. Please try again in a few moments.');
+    }
   };
 
   // Overlay click handler
@@ -244,7 +281,7 @@ export default function ContactModal({
         {/* Close Button (X) */}
         <button
           type="button"
-          onClick={onClose}
+          onClick={handleCloseModal}
           aria-label="Close Contact Modal"
           className="absolute top-4 right-4 z-20 p-2.5 rounded-full bg-neutral-100 dark:bg-neutral-800 text-neutral-600 dark:text-neutral-300 hover:bg-neutral-200 dark:hover:bg-neutral-700 hover:text-neutral-900 dark:hover:text-white transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-amber-500"
         >
@@ -370,11 +407,18 @@ export default function ContactModal({
                   <CheckCircle2 className="w-10 h-10" />
                 </div>
                 <h3 className="font-serif text-2xl font-bold text-neutral-900 dark:text-white">
-                  Thank You!
+                  Message Sent Successfully!
                 </h3>
                 <p className="text-sm text-neutral-600 dark:text-neutral-300 max-w-sm">
-                  We've received your message. Our team will contact you shortly.
+                  Thank you for contacting Sapna Momos. We've received your inquiry and our team will contact you shortly.
                 </p>
+                <button
+                  type="button"
+                  onClick={handleCloseModal}
+                  className="mt-4 px-6 py-2.5 rounded-xl bg-amber-500 hover:bg-amber-600 text-white font-bold text-sm tracking-wide shadow-md transition-all duration-200"
+                >
+                  Close
+                </button>
               </div>
             ) : (
               /* FORM */
@@ -536,6 +580,14 @@ export default function ContactModal({
                   )}
                 </div>
 
+                {/* Error Banner */}
+                {submitError && (
+                  <div className="p-3 bg-red-500/10 border border-red-500/30 rounded-xl text-red-600 dark:text-red-400 text-xs font-medium flex items-center gap-2">
+                    <AlertCircle className="w-4 h-4 shrink-0 text-red-500" />
+                    <span>{submitError}</span>
+                  </div>
+                )}
+
                 {/* Submit Button */}
                 <div className="pt-2">
                   <button
@@ -546,7 +598,7 @@ export default function ContactModal({
                     {isSubmitting ? (
                       <>
                         <Loader2 className="w-4 h-4 animate-spin" />
-                        <span>Sending Message...</span>
+                        <span>Sending...</span>
                       </>
                     ) : (
                       <>

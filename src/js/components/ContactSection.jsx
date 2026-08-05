@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import emailjs from '@emailjs/browser';
 import {
   User,
   Phone,
@@ -35,7 +36,7 @@ const FacebookIcon = ({ className = "w-5 h-5" }) => (
 
 const WhatsAppIcon = ({ className = "w-5 h-5" }) => (
   <svg className={className} fill="currentColor" viewBox="0 0 24 24">
-    <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.205 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.301-.15-1.785-.881-2.062-.982-.276-.101-.477-.15-.677.15-.199.299-.775.982-.95 1.183-.175.201-.349.226-.65.075-1.228-.616-2.285-1.129-3.2-2.715-.244-.421.244-.391.698-1.3.075-.15.038-.276-.019-.376-.057-.101-.477-1.152-.654-1.579-.172-.416-.348-.36-.477-.367h-.402c-.15 0-.399.055-.609.284-.209.229-.798.78-.798 1.901 0 1.122.817 2.206.931 2.357.114.15 1.609 2.457 3.899 3.447 1.48.64 2.065.704 2.809.593.818-.122 1.785-.729 2.036-1.432.251-.703.251-1.304.175-1.431-.075-.127-.275-.202-.576-.352z" />
+    <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.892-1.99-.001-3.951-.5-5.688-1.448l-6.205 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.301-.15-1.785-.881-2.062-.982-.276-.101-.477-.15-.677.15-.199.299-.775.982-.95 1.183-.175.201-.349.226-.65.075-1.228-.616-2.285-1.129-3.2-2.715-.244-.421.244-.391.698-1.3.075-.15.038-.276-.019-.376-.057-.101-.477-1.152-.654-1.579-.172-.416-.348-.36-.477-.367h-.402c-.15 0-.399.055-.609.284-.209.229-.798.78-.798 1.901 0 1.122.817 2.206.931 2.357.114.15 1.609 2.457 3.899 3.447 1.48.64 2.065.704 2.809.593.818-.122 1.785-.729 2.036-1.432.251-.703.251-1.304.175-1.431-.075-.127-.275-.202-.576-.352z" />
   </svg>
 );
 
@@ -78,6 +79,7 @@ export default function ContactSection({
 
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSubmitted, setIsSubmitted] = useState(false);
+  const [submitError, setSubmitError] = useState(null);
 
   // Input change handler with numeric filtering for phone
   const handleChange = (e) => {
@@ -117,9 +119,10 @@ export default function ContactSection({
     setErrors(prev => ({ ...prev, [name]: fieldError }));
   };
 
-  // Form submit handler
-  const handleSubmit = (e) => {
+  // Form submit handler via EmailJS
+  const handleSubmit = async (e) => {
     e.preventDefault();
+    setSubmitError(null);
 
     // Mark all required fields as touched
     setTouched({
@@ -137,11 +140,29 @@ export default function ContactSection({
 
     setIsSubmitting(true);
 
-    // Simulate API network call
-    setTimeout(() => {
+    try {
+      const serviceId = import.meta.env.VITE_EMAILJS_SERVICE_ID;
+      const templateId = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
+      const publicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
+
+      const submissionTime = new Date().toLocaleString('en-US', {
+        dateStyle: 'full',
+        timeStyle: 'short'
+      });
+
+      const templateParams = {
+        customer_name: formData.name.trim(),
+        customer_phone: formData.phone.trim(),
+        customer_email: formData.email.trim() || 'Not provided',
+        customer_subject: formData.subject.trim() || 'General Inquiry',
+        customer_message: formData.message.trim(),
+        submission_time: submissionTime
+      };
+
+      await emailjs.send(serviceId, templateId, templateParams, publicKey);
+
       setIsSubmitting(false);
       setIsSubmitted(true);
-      // Automatically clear the form
       setFormData({
         name: '',
         phone: '',
@@ -163,7 +184,11 @@ export default function ContactSection({
         subject: null,
         message: null
       });
-    }, 1200);
+    } catch (error) {
+      console.error('[EmailJS Error]:', error);
+      setIsSubmitting(false);
+      setSubmitError('Unable to send your message. Please try again in a few moments.');
+    }
   };
 
   const resetForm = () => {
