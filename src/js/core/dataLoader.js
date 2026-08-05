@@ -1,3 +1,9 @@
+import restaurantData from '../../data/restaurant.json';
+import menuData from '../../data/menu.json';
+import testimonialsData from '../../data/testimonials.json';
+import galleryData from '../../data/gallery.json';
+import faqData from '../../data/faq.json';
+
 /**
  * Data Loader Utility
  * Centralized fetch manager with in-memory caching for JSON data resources
@@ -33,33 +39,33 @@ export async function fetchJson(url) {
  * Load global restaurant information
  */
 export async function getRestaurantData() {
-  return fetchJson('/src/data/restaurant.json');
+  return restaurantData;
 }
 
 /**
  * Load culinary menu items and categories
  */
 export async function getMenuData() {
-  return fetchJson('/src/data/menu.json');
+  return menuData;
 }
 
 /**
  * Load customer testimonials
  */
 export async function getTestimonialsData() {
-  return fetchJson('/src/data/testimonials.json');
+  return testimonialsData;
 }
 
 /**
  * Load gallery items
  */
 export async function getGalleryData() {
-  return fetchJson('/src/data/gallery.json');
+  return galleryData;
 }
 
 /**
  * Load FAQ items
  */
 export async function getFaqData() {
-  return fetchJson('/src/data/faq.json');
+  return faqData;
 }
