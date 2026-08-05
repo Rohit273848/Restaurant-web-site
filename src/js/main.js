@@ -4,6 +4,7 @@
 
 import { initTheme } from './core/themeManager.js';
 import { initHeader } from './components/Header.js';
+import { initContactModal } from './core/contactModalManager.jsx';
 
 document.addEventListener('DOMContentLoaded', async () => {
   // 1. Initialize Dynamic Branding CSS Tokens
@@ -12,12 +13,15 @@ document.addEventListener('DOMContentLoaded', async () => {
   // 2. Initialize Header & Mobile Drawer
   await initHeader();
 
-  // 3. Dynamic Lucide Icon SVG Hydration (if Lucide library is present)
+  // 3. Initialize Global Contact Modal System
+  initContactModal();
+
+  // 4. Dynamic Lucide Icon SVG Hydration (if Lucide library is present)
   if (window.lucide) {
     window.lucide.createIcons();
   }
 
-  // 4. Initialize AOS (Animate On Scroll) if loaded
+  // 5. Initialize AOS (Animate On Scroll) if loaded
   if (window.AOS) {
     window.AOS.init({
       duration: 800,
