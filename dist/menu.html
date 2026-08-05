@@ -5,47 +5,69 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Momo Menu | Sapna Momos (Usmanpura, Chhatrapati Sambhajinagar)</title>
   <meta name="description" content="Explore Sapna Momos menu featuring Steam Momos (₹60), Fry Momos (₹70), Tandoori Momos (₹70), Kurkure Momos (₹100), Afghani Malai (₹130), Pizza Momos (₹140), Cheese Chilli, French Fries & Beverages." />
-  <script type="module" crossorigin src="/assets/menu-Cd1bATeT.js"></script>
-  <link rel="modulepreload" crossorigin href="/assets/main-DFQJAXMo.js">
-  <link rel="modulepreload" crossorigin href="/assets/FoodModal-8sjuFdUg.js">
-  <link rel="stylesheet" crossorigin href="/assets/tailwind-BgZy2Eu9.css">
+  <script type="module" crossorigin src="/assets/menu-DsBwtDlr.js"></script>
+  <link rel="modulepreload" crossorigin href="/assets/main-DPxo_rIV.js">
+  <link rel="modulepreload" crossorigin href="/assets/FoodModal-BiZqCca0.js">
+  <link rel="stylesheet" crossorigin href="/assets/tailwind-3xUmOkn2.css">
 </head>
-<body class="bg-brand-dark text-slate-100 antialiased selection:bg-brand-gold selection:text-slate-950 flex flex-col min-h-screen">
+<body class="bg-white text-neutral-900 dark:bg-brand-dark dark:text-slate-100 antialiased selection:bg-brand-gold selection:text-slate-950 flex flex-col min-h-screen">
   <div id="menu-page-identifier" class="hidden"></div>
 
   <!-- Header Navigation -->
-  <header id="site-header" class="fixed top-0 left-0 right-0 z-40 transition-all duration-300 py-5">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
-      <a href="index.html" class="flex items-center gap-3 group">
-        <div class="w-12 h-12 rounded-full overflow-hidden shadow-md flex items-center justify-center shrink-0">
-          <img src="https://ik.imagekit.io/cvlhdu1b2/images/logo.png" alt="Sapna Momos Chef Mascot Logo" class="w-full h-full object-cover rounded-full group-hover:scale-110 transition-transform duration-300" />
+  <header id="site-header" class="fixed top-4 left-1/2 -translate-x-1/2 z-50 w-[92%] max-w-5xl bg-white/90 backdrop-blur-xl border border-neutral-200 dark:bg-slate-950/80 dark:backdrop-blur-md dark:border-slate-800/80 px-4 sm:px-6 py-3.5 rounded-full flex items-center justify-between shadow-lg dark:shadow-2xl transition-all duration-300">
+    <!-- Brand Logo -->
+    <a href="index.html" class="flex items-center gap-3 group shrink-0">
+      <div class="relative p-[1.5px] rounded-full bg-gradient-to-tr from-purple-600 via-pink-500 to-cyan-400">
+        <div class="w-10 h-10 rounded-full overflow-hidden bg-black flex items-center justify-center">
+          <img src="https://ik.imagekit.io/cvlhdu1b2/images/logo.png" alt="Sapna Momos Chef Mascot Logo"
+            class="w-full h-full object-cover rounded-full group-hover:scale-110 transition-transform duration-300" />
         </div>
-        <div class="flex flex-col">
-          <div class="flex items-center gap-1.5">
-            <span class="font-serif text-lg sm:text-xl font-black tracking-wider"><span class="text-amber-400">SAPNA</span> <span class="text-red-500">MOMOS</span></span>
-            <div class="flex items-center gap-1 border border-slate-700 rounded px-1 py-0.5 text-[9px] bg-slate-900/80">
-              <span class="w-2 h-2 rounded-full bg-emerald-500 inline-block" title="Pure Veg Options Available"></span>
-              <span class="w-2 h-2 rounded-full bg-red-600 inline-block" title="Chicken Options Available"></span>
-            </div>
-          </div>
-          <span class="text-[10px] tracking-[0.15em] uppercase text-amber-300 font-medium">So Fresh So Yummy</span>
-        </div>
-      </a>
-
-      <nav class="hidden lg:flex items-center gap-8">
-        <a href="index.html" class="nav-link text-sm font-medium text-slate-300 hover:text-brand-gold py-1">Home</a>
-        <a href="about.html" class="nav-link text-sm font-medium text-slate-300 hover:text-brand-gold py-1">About Us</a>
-        <a href="menu.html" class="nav-link text-sm font-medium text-brand-gold py-1">Momo Menu</a>
-        <a href="gallery.html" class="nav-link text-sm font-medium text-slate-300 hover:text-brand-gold py-1">Gallery</a>
-        <a href="contact.html" class="nav-link text-sm font-medium text-slate-300 hover:text-brand-gold py-1">Contact</a>
-      </nav>
-
-      <div class="hidden lg:flex items-center gap-5">
-        <a href="contact.html" class="btn-primary text-xs py-2.5 px-5">Contact Us</a>
       </div>
+      <div class="flex flex-col">
+        <div class="flex items-center gap-1.5">
+          <span class="font-serif text-sm sm:text-base font-black tracking-wider"><span
+              class="text-amber-500 dark:text-amber-400">SAPNA</span> <span class="text-red-500">MOMOS</span></span>
+          <div class="flex items-center gap-1 border border-neutral-300 dark:border-slate-700/80 rounded px-1 py-0.2 text-[8px] bg-neutral-100 dark:bg-slate-900/80">
+            <span class="w-1.5 h-1.5 rounded-full bg-emerald-500 inline-block" title="Pure Veg Options Available"></span>
+            <span class="w-1.5 h-1.5 rounded-full bg-red-600 inline-block" title="Chicken Options Available"></span>
+          </div>
+        </div>
+        <span class="text-[8px] sm:text-[9px] tracking-[0.12em] uppercase text-amber-600 dark:text-amber-300 font-medium">So Fresh So Yummy</span>
+      </div>
+    </a>
 
-      <button id="mobile-menu-toggle" class="lg:hidden p-2.5 rounded-lg bg-brand-dark-card border border-brand-dark-border text-slate-200" aria-label="Open Mobile Menu">
-        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"/></svg>
+    <!-- Desktop Navbar -->
+    <nav class="hidden lg:flex items-center gap-2">
+      <a href="index.html" class="nav-link text-xs font-semibold text-neutral-800 hover:text-amber-500 dark:text-slate-300 dark:hover:text-white px-3.5 py-2 rounded-full hover:bg-neutral-100 dark:hover:bg-white/10 transition-all duration-200">Home</a>
+      <a href="about.html" class="nav-link text-xs font-semibold text-neutral-800 hover:text-amber-500 dark:text-slate-300 dark:hover:text-white px-3.5 py-2 rounded-full hover:bg-neutral-100 dark:hover:bg-white/10 transition-all duration-200">About Us</a>
+      <a href="menu.html" class="nav-link text-xs font-semibold text-neutral-800 hover:text-amber-500 dark:text-slate-300 dark:hover:text-white px-3.5 py-2 rounded-full hover:bg-neutral-100 dark:hover:bg-white/10 transition-all duration-200">Momo Menu</a>
+      <a href="gallery.html" class="nav-link text-xs font-semibold text-neutral-800 hover:text-amber-500 dark:text-slate-300 dark:hover:text-white px-3.5 py-2 rounded-full hover:bg-neutral-100 dark:hover:bg-white/10 transition-all duration-200">Gallery</a>
+      <a href="contact.html" class="nav-link text-xs font-semibold text-neutral-800 hover:text-amber-500 dark:text-slate-300 dark:hover:text-white px-3.5 py-2 rounded-full hover:bg-neutral-100 dark:hover:bg-white/10 transition-all duration-200">Contact</a>
+    </nav>
+
+    <!-- Desktop Right Controls -->
+    <div class="flex items-center gap-2.5">
+      <!-- Theme Toggle Button -->
+      <button id="theme-toggle"
+        class="w-10 h-10 rounded-full flex items-center justify-center bg-neutral-100 border border-neutral-300 hover:bg-neutral-200 dark:bg-slate-900/90 dark:border-slate-800 dark:hover:bg-slate-800 text-amber-500 dark:text-amber-400 focus:outline-none transition-colors"
+        aria-label="Toggle Theme">
+        <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A5 5 0 0 0 8 8c0 1 .3 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5" />
+          <path d="M9 18h6" />
+          <path d="M10 22h4" />
+          <path d="M12 2v2" />
+          <path d="M5.22 5.22l1.42 1.42" />
+          <path d="M17.36 6.64l1.42-1.42" />
+        </svg>
+      </button>
+
+      <!-- Hamburger Menu Toggle Button -->
+      <button id="mobile-menu-toggle"
+        class="lg:hidden w-10 h-10 rounded-full flex items-center justify-center bg-neutral-100 border border-neutral-300 hover:bg-neutral-200 dark:bg-slate-900/90 dark:border-slate-800 dark:hover:bg-slate-800 text-neutral-800 dark:text-white focus:outline-none transition-colors"
+        aria-label="Open Navigation Menu">
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
       </button>
     </div>
   </header>
@@ -53,42 +75,42 @@
   <!-- Mobile Menu Drawer -->
   <div id="mobile-menu-drawer" class="fixed inset-0 z-50 transform translate-x-full pointer-events-none transition-transform duration-300 ease-in-out flex justify-end">
     <div id="mobile-drawer-overlay" class="absolute inset-0 bg-slate-950/80 backdrop-blur-sm"></div>
-    <div class="relative w-full max-w-sm bg-brand-dark-card border-l border-brand-dark-border h-full p-6 flex flex-col justify-between overflow-y-auto z-10">
+    <div class="relative w-full max-w-sm bg-white border-l border-neutral-200 dark:bg-brand-dark-card dark:border-l dark:border-brand-dark-border h-full p-6 flex flex-col justify-between overflow-y-auto z-10 shadow-xl">
       <div>
-        <div class="flex items-center justify-between pb-6 border-b border-brand-dark-border mb-6">
+        <div class="flex items-center justify-between pb-6 border-b border-neutral-200 dark:border-brand-dark-border mb-6">
           <div class="flex flex-col">
-            <span class="font-serif text-xl font-bold text-slate-100 brand-name-text">Sapna Momos</span>
-            <span class="text-xs text-brand-gold font-sans">Usmanpura, Chhatrapati Sambhajinagar</span>
+            <span class="font-serif text-xl font-bold text-neutral-900 dark:text-slate-100 brand-name-text">Sapna Momos</span>
+            <span class="text-xs text-amber-600 dark:text-brand-gold font-sans">Usmanpura, Chhatrapati Sambhajinagar</span>
           </div>
-          <button id="mobile-drawer-close" class="p-2 text-slate-400 hover:text-white"><svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg></button>
+          <button id="mobile-drawer-close" class="p-2 text-neutral-500 hover:text-neutral-850 dark:text-slate-400 dark:hover:text-white"><svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg></button>
         </div>
         <nav class="flex flex-col gap-4">
-          <a href="index.html" class="nav-link text-lg font-medium text-slate-200 py-2 border-b border-brand-dark-border/40">Home</a>
-          <a href="about.html" class="nav-link text-lg font-medium text-slate-200 py-2 border-b border-brand-dark-border/40">About Us</a>
-          <a href="menu.html" class="nav-link text-lg font-medium text-brand-gold py-2 border-b border-brand-dark-border/40">Momo Menu</a>
-          <a href="gallery.html" class="nav-link text-lg font-medium text-slate-200 py-2 border-b border-brand-dark-border/40">Gallery</a>
-          <a href="contact.html" class="nav-link text-lg font-medium text-slate-200 py-2 border-b border-brand-dark-border/40">Contact</a>
+          <a href="index.html" class="nav-link text-lg font-medium text-neutral-800 hover:text-amber-500 dark:text-slate-200 py-2 border-b border-neutral-100 dark:border-brand-dark-border/40">Home</a>
+          <a href="about.html" class="nav-link text-lg font-medium text-neutral-800 hover:text-amber-500 dark:text-slate-200 py-2 border-b border-neutral-100 dark:border-brand-dark-border/40">About Us</a>
+          <a href="menu.html" class="nav-link text-lg font-medium text-amber-500 dark:text-brand-gold py-2 border-b border-neutral-100 dark:border-brand-dark-border/40">Momo Menu</a>
+          <a href="gallery.html" class="nav-link text-lg font-medium text-neutral-800 hover:text-amber-500 dark:text-slate-200 py-2 border-b border-neutral-100 dark:border-brand-dark-border/40">Gallery</a>
+          <a href="contact.html" class="nav-link text-lg font-medium text-neutral-800 hover:text-amber-500 dark:text-slate-200 py-2 border-b border-neutral-100 dark:border-brand-dark-border/40">Contact</a>
         </nav>
       </div>
-      <div class="pt-6 border-t border-brand-dark-border">
+      <div class="pt-6 border-t border-neutral-200 dark:border-brand-dark-border">
         <a href="contact.html" class="btn-primary w-full text-center">Contact Us</a>
       </div>
     </div>
   </div>
 
-  <main class="flex-grow pt-32 pb-24">
+  <main class="flex-grow pt-32 pb-24 animate-hero-brand">
     <!-- Page Hero Banner -->
     <section class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-12 text-center overflow-hidden">
-      <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-brand-gold/10 rounded-full filter blur-3xl pointer-events-none"></div>
+      <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-amber-500/10 dark:bg-brand-gold/10 rounded-full filter blur-3xl pointer-events-none"></div>
 
       <div class="relative z-10">
         <span class="section-tag justify-center mb-3">
-          <span class="w-6 h-0.5 bg-brand-gold"></span>
+          <span class="w-6 h-0.5 bg-amber-500 dark:bg-brand-gold"></span>
           Official Menu
-          <span class="w-6 h-0.5 bg-brand-gold"></span>
+          <span class="w-6 h-0.5 bg-amber-500 dark:bg-brand-gold"></span>
         </span>
-        <h1 class="font-serif fluid-section-title font-bold text-slate-100 mb-4">Official Sapna Momos Menu</h1>
-        <p class="fluid-subtitle text-slate-300 font-light max-w-xl mx-auto leading-relaxed text-sm">
+        <h1 class="font-serif fluid-section-title font-bold text-neutral-900 dark:text-slate-100 mb-4">Official Sapna Momos Menu</h1>
+        <p class="fluid-subtitle text-neutral-600 dark:text-slate-300 font-light max-w-xl mx-auto leading-relaxed text-sm">
           Available in Veg, Paneer & Chicken options! Filter by Steam & Fry, Tandoori & Kurkure, Specialty & Fusion, French Fries, and Beverages.
         </p>
       </div>
@@ -96,7 +118,7 @@
 
     <!-- Filter & Control Panel Section -->
     <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-12" aria-label="Menu Filters and Search">
-      <div class="bg-brand-dark-card border border-brand-dark-border p-6 sm:p-8 rounded-2xl shadow-dark-card space-y-6">
+      <div class="bg-white border border-neutral-200 dark:bg-brand-dark-card dark:border-brand-dark-border p-6 sm:p-8 rounded-2xl shadow-lg dark:shadow-dark-card space-y-6">
         
         <!-- Live Search Input -->
         <div class="relative max-w-xl mx-auto">
@@ -105,53 +127,53 @@
             type="text" 
             id="menu-search-input" 
             placeholder="Search momos (e.g. Steam, Fry, Tandoori, Kurkure, Pizza, Paneer, Chicken, Fries)..." 
-            class="form-input pl-12 pr-4 py-3.5 text-sm bg-brand-dark border-brand-dark-border focus:border-brand-gold text-slate-100 placeholder-slate-400 rounded-xl"
+            class="form-input pl-12 pr-4 py-3.5 text-sm bg-white border border-neutral-300 text-neutral-900 placeholder-neutral-450 focus:border-amber-500 focus:ring-amber-400 dark:bg-brand-dark dark:border-brand-dark-border dark:text-slate-100 dark:placeholder-slate-500 dark:focus:border-brand-gold dark:focus:ring-brand-gold rounded-xl"
           />
-          <svg class="w-5 h-5 text-brand-gold absolute left-4 top-1/2 -translate-y-1/2 pointer-events-none" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+          <svg class="w-5 h-5 text-amber-600 dark:text-brand-gold absolute left-4 top-1/2 -translate-y-1/2 pointer-events-none" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
           </svg>
         </div>
 
         <!-- Category Filter Buttons -->
         <div id="menu-category-tabs" class="flex flex-wrap items-center justify-center gap-2.5" role="tablist" aria-label="Menu Categories">
-          <button data-category="all" role="tab" aria-selected="true" class="category-tab-btn px-6 py-2.5 rounded-full text-xs font-semibold uppercase tracking-wider bg-brand-gold text-slate-950 shadow-gold-glow transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-brand-gold">
+          <button data-category="all" role="tab" aria-selected="true" class="category-tab-btn px-6 py-2.5 rounded-full text-xs font-semibold uppercase tracking-wider bg-amber-500 dark:bg-brand-gold text-black dark:text-slate-950 shadow-md dark:shadow-gold-glow transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-brand-gold">
             All Items
           </button>
-          <button data-category="steam-fry" role="tab" aria-selected="false" class="category-tab-btn px-6 py-2.5 rounded-full text-xs font-semibold uppercase tracking-wider bg-brand-dark-card border border-brand-dark-border text-slate-300 hover:text-brand-gold hover:border-brand-gold/40 transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-brand-gold">
+          <button data-category="steam-fry" role="tab" aria-selected="false" class="category-tab-btn px-6 py-2.5 rounded-full text-xs font-semibold uppercase tracking-wider bg-white border border-neutral-200 text-neutral-800 hover:text-amber-500 hover:border-amber-500/40 dark:bg-brand-dark-card dark:border-brand-dark-border dark:text-slate-300 dark:hover:text-brand-gold dark:hover:border-brand-gold/40 transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-brand-gold">
             Steam & Fry Momos
           </button>
-          <button data-category="tandoori-kurkure" role="tab" aria-selected="false" class="category-tab-btn px-6 py-2.5 rounded-full text-xs font-semibold uppercase tracking-wider bg-brand-dark-card border border-brand-dark-border text-slate-300 hover:text-brand-gold hover:border-brand-gold/40 transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-brand-gold">
+          <button data-category="tandoori-kurkure" role="tab" aria-selected="false" class="category-tab-btn px-6 py-2.5 rounded-full text-xs font-semibold uppercase tracking-wider bg-white border border-neutral-200 text-neutral-800 hover:text-amber-500 hover:border-amber-500/40 dark:bg-brand-dark-card dark:border-brand-dark-border dark:text-slate-300 dark:hover:text-brand-gold dark:hover:border-brand-gold/40 transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-brand-gold">
             Tandoori & Kurkure
           </button>
-          <button data-category="specialty-fusion" role="tab" aria-selected="false" class="category-tab-btn px-6 py-2.5 rounded-full text-xs font-semibold uppercase tracking-wider bg-brand-dark-card border border-brand-dark-border text-slate-300 hover:text-brand-gold hover:border-brand-gold/40 transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-brand-gold">
+          <button data-category="specialty-fusion" role="tab" aria-selected="false" class="category-tab-btn px-6 py-2.5 rounded-full text-xs font-semibold uppercase tracking-wider bg-white border border-neutral-200 text-neutral-800 hover:text-amber-500 hover:border-amber-500/40 dark:bg-brand-dark-card dark:border-brand-dark-border dark:text-slate-300 dark:hover:text-brand-gold dark:hover:border-brand-gold/40 transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-brand-gold">
             Specialty & Fusion
           </button>
-          <button data-category="fries-sides" role="tab" aria-selected="false" class="category-tab-btn px-6 py-2.5 rounded-full text-xs font-semibold uppercase tracking-wider bg-brand-dark-card border border-brand-dark-border text-slate-300 hover:text-brand-gold hover:border-brand-gold/40 transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-brand-gold">
+          <button data-category="fries-sides" role="tab" aria-selected="false" class="category-tab-btn px-6 py-2.5 rounded-full text-xs font-semibold uppercase tracking-wider bg-white border border-neutral-200 text-neutral-800 hover:text-amber-500 hover:border-amber-500/40 dark:bg-brand-dark-card dark:border-brand-dark-border dark:text-slate-300 dark:hover:text-brand-gold dark:hover:border-brand-gold/40 transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-brand-gold">
             French Fries
           </button>
-          <button data-category="beverages" role="tab" aria-selected="false" class="category-tab-btn px-6 py-2.5 rounded-full text-xs font-semibold uppercase tracking-wider bg-brand-dark-card border border-brand-dark-border text-slate-300 hover:text-brand-gold hover:border-brand-gold/40 transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-brand-gold">
+          <button data-category="beverages" role="tab" aria-selected="false" class="category-tab-btn px-6 py-2.5 rounded-full text-xs font-semibold uppercase tracking-wider bg-white border border-neutral-200 text-neutral-800 hover:text-amber-500 hover:border-amber-500/40 dark:bg-brand-dark-card dark:border-brand-dark-border dark:text-slate-300 dark:hover:text-brand-gold dark:hover:border-brand-gold/40 transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-brand-gold">
             Beverages
           </button>
         </div>
 
         <!-- Dietary Toggles & Result Counter -->
-        <div class="flex flex-col sm:flex-row items-center justify-between gap-4 pt-5 border-t border-brand-dark-border/60 text-xs">
+        <div class="flex flex-col sm:flex-row items-center justify-between gap-4 pt-5 border-t border-neutral-200 dark:border-brand-dark-border/60 text-xs">
           <div class="flex items-center gap-6 flex-wrap justify-center sm:justify-start">
-            <span class="text-slate-400 font-medium">Dietary Options:</span>
-            <label class="inline-flex items-center gap-2 cursor-pointer text-slate-300 hover:text-brand-gold transition-colors">
-              <input type="checkbox" data-filter="vegan" class="dietary-filter-checkbox rounded bg-slate-900 border-slate-700 text-brand-gold focus:ring-brand-gold" />
+            <span class="text-neutral-500 dark:text-slate-400 font-medium">Dietary Options:</span>
+            <label class="inline-flex items-center gap-2 cursor-pointer text-neutral-700 hover:text-amber-500 dark:text-slate-300 dark:hover:text-brand-gold transition-colors">
+              <input type="checkbox" data-filter="vegan" class="dietary-filter-checkbox rounded bg-white border-neutral-300 text-amber-500 focus:ring-amber-400 dark:bg-slate-900 dark:border-slate-700 dark:text-brand-gold dark:focus:ring-brand-gold" />
               <span>Vegan</span>
             </label>
-            <label class="inline-flex items-center gap-2 cursor-pointer text-slate-300 hover:text-brand-gold transition-colors">
-              <input type="checkbox" data-filter="vegetarian" class="dietary-filter-checkbox rounded bg-slate-900 border-slate-700 text-brand-gold focus:ring-brand-gold" />
+            <label class="inline-flex items-center gap-2 cursor-pointer text-neutral-700 hover:text-amber-500 dark:text-slate-300 dark:hover:text-brand-gold transition-colors">
+              <input type="checkbox" data-filter="vegetarian" class="dietary-filter-checkbox rounded bg-white border-neutral-300 text-amber-500 focus:ring-amber-400 dark:bg-slate-900 dark:border-slate-700 dark:text-brand-gold dark:focus:ring-brand-gold" />
               <span>Vegetarian</span>
             </label>
-            <label class="inline-flex items-center gap-2 cursor-pointer text-slate-300 hover:text-brand-gold transition-colors">
-              <input type="checkbox" data-filter="glutenFree" class="dietary-filter-checkbox rounded bg-slate-900 border-slate-700 text-brand-gold focus:ring-brand-gold" />
+            <label class="inline-flex items-center gap-2 cursor-pointer text-neutral-700 hover:text-amber-500 dark:text-slate-300 dark:hover:text-brand-gold transition-colors">
+              <input type="checkbox" data-filter="glutenFree" class="dietary-filter-checkbox rounded bg-white border-neutral-300 text-amber-500 focus:ring-amber-400 dark:bg-slate-900 dark:border-slate-700 dark:text-brand-gold dark:focus:ring-brand-gold" />
               <span>Gluten-Free</span>
             </label>
           </div>
-          <span id="menu-result-count" class="text-slate-400 font-serif font-bold">Showing menu items...</span>
+          <span id="menu-result-count" class="text-neutral-600 dark:text-slate-400 font-serif font-bold">Showing menu items...</span>
         </div>
 
       </div>
@@ -165,10 +187,10 @@
     </section>
   </main>
 
-  <footer class="bg-slate-950 border-t border-brand-dark-border py-8 text-center text-xs text-slate-500 flex flex-col items-center gap-3">
+  <footer class="bg-neutral-100 border-t border-neutral-200 dark:bg-slate-950 dark:border-brand-dark-border py-8 text-center text-xs text-slate-500 flex flex-col items-center gap-3">
     <div class="flex items-center gap-2">
       <img src="https://ik.imagekit.io/cvlhdu1b2/images/logo.png" alt="Sapna Momos Chef Logo" class="w-8 h-8 rounded-full object-cover" />
-      <span class="font-serif font-bold text-slate-200"><span class="text-amber-400">SAPNA</span> <span class="text-red-500">MOMOS</span></span>
+      <span class="font-serif font-bold text-neutral-800 dark:text-slate-200"><span class="text-amber-500 dark:text-amber-400">SAPNA</span> <span class="text-red-500">MOMOS</span></span>
     </div>
     <p>&copy; 2026 Sapna Momos. All rights reserved.</p>
   </footer>

@@ -38,11 +38,11 @@ export async function initHeader() {
 
     const onScroll = () => {
       if (window.scrollY > 40) {
-        header.classList.add('bg-brand-dark/95', 'backdrop-blur-md', 'border-b', 'border-brand-dark-border', 'py-3', 'shadow-lg');
-        header.classList.remove('py-5', 'bg-transparent');
+        header.classList.add('top-2', 'py-2', 'bg-white/95', 'dark:bg-slate-950/95', 'shadow-md', 'dark:shadow-gold-glow/10');
+        header.classList.remove('top-4', 'py-3.5', 'bg-white/90', 'dark:bg-slate-950/80', 'shadow-lg');
       } else {
-        header.classList.remove('bg-brand-dark/95', 'backdrop-blur-md', 'border-b', 'border-brand-dark-border', 'py-3', 'shadow-lg');
-        header.classList.add('py-5', 'bg-transparent');
+        header.classList.remove('top-2', 'py-2', 'bg-white/95', 'dark:bg-slate-950/95', 'shadow-md', 'dark:shadow-gold-glow/10');
+        header.classList.add('top-4', 'py-3.5', 'bg-white/90', 'dark:bg-slate-950/80', 'shadow-lg');
       }
       ticking = false;
     };
@@ -145,11 +145,50 @@ export async function initHeader() {
   navLinks.forEach(link => {
     const href = link.getAttribute('href');
     if (href === currentPath || (currentPath === '' && href === 'index.html')) {
-      link.classList.add('text-brand-gold', 'font-semibold');
-      link.classList.remove('text-slate-300');
+      link.classList.add('text-amber-500', 'dark:text-brand-gold', 'font-semibold');
+      link.classList.remove('text-neutral-800', 'dark:text-slate-300');
       link.setAttribute('aria-current', 'page');
     } else {
       link.removeAttribute('aria-current');
+      link.classList.add('text-neutral-800', 'dark:text-slate-300');
+      link.classList.remove('text-amber-500', 'dark:text-brand-gold', 'font-semibold');
     }
   });
+
+  // 6. Theme Toggle Handler
+  const themeToggle = $('#theme-toggle');
+  if (themeToggle) {
+    themeToggle.addEventListener('click', () => {
+      const isLight = document.documentElement.classList.contains('light');
+      const root = document.documentElement;
+      if (isLight) {
+        root.classList.remove('light');
+        root.classList.add('dark');
+        localStorage.setItem('theme', 'dark');
+        getRestaurantData().then(data => {
+          if (data && data.brand && data.brand.theme && data.brand.theme.darkBg) {
+            root.style.setProperty('--color-bg-dark', data.brand.theme.darkBg);
+          }
+        }).catch(err => console.warn(err));
+      } else {
+        root.classList.remove('dark');
+        root.classList.add('light');
+        localStorage.setItem('theme', 'light');
+        root.style.removeProperty('--color-bg-dark');
+      }
+      
+      // Update link styles immediately on theme toggle
+      const currentPathVal = window.location.pathname.split('/').pop() || 'index.html';
+      $$('.nav-link').forEach(link => {
+        const href = link.getAttribute('href');
+        if (href === currentPathVal || (currentPathVal === '' && href === 'index.html')) {
+          link.classList.add('text-amber-500', 'dark:text-brand-gold', 'font-semibold');
+          link.classList.remove('text-neutral-800', 'dark:text-slate-300');
+        } else {
+          link.classList.add('text-neutral-800', 'dark:text-slate-300');
+          link.classList.remove('text-amber-500', 'dark:text-brand-gold', 'font-semibold');
+        }
+      });
+    });
+  }
 }

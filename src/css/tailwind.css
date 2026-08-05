@@ -5,12 +5,78 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Theme Custom Properties */
+:root {
+  --color-primary: #FFC107;
+  --color-primary-dark: #FFA000;
+  --color-accent: #FF1744;
+  --color-bg-dark: #0B0F17;
+  --color-card-dark: #131924;
+  --color-border-dark: #1F293D;
+  --color-text: #F1F5F9;
+  --color-text-muted: #8E9BAE;
+}
+
+/* Light Theme Overrides */
+html.light {
+  --color-bg-dark: #FAF7F2;
+  --color-card-dark: #FFFFFF;
+  --color-border-dark: #E2D1B9;
+  --color-text: #1E293B;
+  --color-text-muted: #64748B;
+}
+
 /* Custom Base Resets */
 html {
   scroll-behavior: smooth;
   font-family: 'Inter', system-ui, sans-serif;
-  color: #F1F5F9;
-  background-color: #0B0F17;
+  color: var(--color-text);
+  background-color: var(--color-bg-dark);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Global transitions for theme elements */
+body, header, nav, a, div, section, p, h1, h2, h3, h4, h5, h6, span, button, img, svg {
+  transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+}
+
+/* Body level styling overrides for light theme */
+html.light body {
+  background-color: var(--color-bg-dark);
+  color: var(--color-text);
+}
+
+/* Clean overrides for Tailwind color classes in light mode */
+html.light .text-slate-100,
+html.light .text-slate-200,
+html.light .text-slate-300,
+html.light .text-white {
+  color: var(--color-text);
+}
+
+html.light .text-slate-400,
+html.light .text-slate-500 {
+  color: var(--color-text-muted);
+}
+
+html.light .bg-brand-dark-card {
+  background-color: var(--color-card-dark);
+  border-color: var(--color-border-dark);
+}
+
+html.light .border-brand-dark-border {
+  border-color: var(--color-border-dark);
+}
+
+html.light .text-brand-gold {
+  color: var(--color-primary-dark, #A88B63);
+}
+
+html.light .bg-slate-950\/70,
+html.light .bg-slate-950\/80,
+html.light .bg-slate-950\/95 {
+  background-color: rgba(255, 255, 255, 0.85);
+  border-color: rgba(226, 209, 185, 0.8);
 }
 
 /* Custom Scrollbar */
@@ -18,12 +84,12 @@ html {
   width: 8px;
 }
 ::-webkit-scrollbar-track {
-  background: #0B0F17;
+  background: var(--color-bg-dark);
 }
 ::-webkit-scrollbar-thumb {
-  background: #1F293D;
+  background: var(--color-border-dark);
   border-radius: 4px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #C5A880;
+  background: var(--color-primary);
 }

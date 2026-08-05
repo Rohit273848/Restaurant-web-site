@@ -87,12 +87,12 @@ document.addEventListener('DOMContentLoaded', async () => {
     if (categoryTabsContainer) {
       delegate(categoryTabsContainer, 'click', '.category-tab-btn', (e, target) => {
         $$('.category-tab-btn', categoryTabsContainer).forEach(btn => {
-          btn.classList.remove('bg-brand-gold', 'text-slate-950');
-          btn.classList.add('bg-brand-dark-card', 'text-slate-300', 'border', 'border-brand-dark-border');
+          btn.classList.remove('bg-amber-500', 'dark:bg-brand-gold', 'text-black', 'dark:text-slate-950', 'shadow-gold-glow');
+          btn.classList.add('bg-white', 'dark:bg-brand-dark-card', 'text-neutral-800', 'dark:text-slate-300', 'border', 'border-neutral-200', 'dark:border-brand-dark-border');
         });
 
-        target.classList.remove('bg-brand-dark-card', 'text-slate-300', 'border', 'border-brand-dark-border');
-        target.classList.add('bg-brand-gold', 'text-slate-950');
+        target.classList.remove('bg-white', 'dark:bg-brand-dark-card', 'text-neutral-800', 'dark:text-slate-300', 'border', 'border-neutral-200', 'dark:border-brand-dark-border');
+        target.classList.add('bg-amber-500', 'dark:bg-brand-gold', 'text-black', 'dark:text-slate-950', 'shadow-gold-glow');
 
         currentCategoryId = target.dataset.category || 'all';
         renderCatalog();

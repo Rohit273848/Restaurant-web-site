@@ -1,11 +1,11 @@
 @layer components {
   /* Button Abstractions */
   .btn-primary {
-    @apply inline-flex items-center justify-center gap-2 min-h-[44px] px-6 sm:px-7 py-3 bg-brand-gold text-slate-950 font-semibold rounded-lg tracking-wide shadow-gold-glow hover:bg-brand-gold-dark hover:shadow-lg transition-all duration-300 focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-gold focus-visible:ring-offset-2 focus-visible:ring-offset-slate-950 disabled:opacity-50 disabled:cursor-not-allowed select-none;
+    @apply inline-flex items-center justify-center gap-2 min-h-[44px] px-6 sm:px-7 py-3 bg-amber-500 hover:bg-amber-600 text-black dark:bg-brand-gold dark:text-slate-950 font-semibold rounded-lg tracking-wide shadow-gold-glow dark:hover:bg-brand-gold-dark hover:shadow-lg transition-all duration-300 focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-gold focus-visible:ring-offset-2 focus-visible:ring-offset-slate-950 disabled:opacity-50 disabled:cursor-not-allowed select-none;
   }
 
   .btn-secondary {
-    @apply inline-flex items-center justify-center gap-2 min-h-[44px] px-6 sm:px-7 py-3 bg-transparent border-2 border-brand-gold text-brand-gold font-semibold rounded-lg tracking-wide hover:bg-brand-gold hover:text-slate-950 transition-all duration-300 focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-gold focus-visible:ring-offset-2 focus-visible:ring-offset-slate-950 disabled:opacity-50 disabled:cursor-not-allowed select-none;
+    @apply inline-flex items-center justify-center gap-2 min-h-[44px] px-6 sm:px-7 py-3 bg-white border border-neutral-300 text-neutral-800 hover:bg-neutral-100 dark:bg-transparent dark:border-2 dark:border-brand-gold dark:text-brand-gold dark:hover:bg-brand-gold dark:hover:text-slate-950 font-semibold rounded-lg tracking-wide transition-all duration-300 focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-gold focus-visible:ring-offset-2 focus-visible:ring-offset-slate-950 disabled:opacity-50 disabled:cursor-not-allowed select-none;
   }
 
   .btn-outline-white {
@@ -13,17 +13,17 @@
   }
 
   .btn-icon {
-    @apply inline-flex items-center justify-center min-w-[44px] min-h-[44px] p-3 rounded-full bg-brand-dark-card border border-brand-dark-border text-brand-gold hover:bg-brand-gold hover:text-slate-950 transition-all duration-300 focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-gold;
+    @apply inline-flex items-center justify-center min-w-[44px] min-h-[44px] p-3 rounded-full bg-white border border-neutral-200 text-amber-500 hover:bg-neutral-100 dark:bg-brand-dark-card dark:border-brand-dark-border dark:text-brand-gold dark:hover:bg-brand-gold dark:hover:text-slate-950 transition-all duration-300 focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-gold;
   }
 
   /* Card Components */
   .food-card {
-    @apply bg-brand-dark-card border border-brand-dark-border rounded-xl overflow-hidden shadow-dark-card hover:border-brand-gold transition-all duration-300 flex flex-col h-full justify-between;
+    @apply bg-white border border-neutral-200 rounded-3xl shadow-lg hover:shadow-xl dark:bg-brand-dark-card dark:border-brand-dark-border dark:rounded-xl dark:shadow-dark-card dark:hover:border-brand-gold transition-all duration-300 flex flex-col h-full justify-between;
   }
 
   /* Section Dividers & Headlines */
   .section-tag {
-    @apply inline-flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-brand-gold mb-3;
+    @apply inline-flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-amber-600 dark:text-brand-gold mb-3;
   }
 
   .gold-divider {
@@ -32,15 +32,15 @@
 
   /* Input & Form Controls */
   .form-input {
-    @apply w-full min-h-[44px] px-4 py-3 bg-brand-dark border border-brand-dark-border text-slate-100 placeholder-slate-500 rounded-lg focus:outline-none focus:border-brand-gold focus:ring-1 focus:ring-brand-gold transition-all duration-200;
+    @apply w-full min-h-[44px] px-4 py-3 bg-white border border-neutral-300 text-neutral-900 placeholder-neutral-400 rounded-lg focus:outline-none focus:border-amber-500 focus:ring-1 focus:ring-amber-400 dark:bg-brand-dark dark:border-brand-dark-border dark:text-slate-100 dark:placeholder-slate-500 dark:focus:border-brand-gold dark:focus:ring-brand-gold transition-all duration-200;
   }
 
   .form-select {
-    @apply w-full min-h-[44px] px-4 py-3 bg-brand-dark border border-brand-dark-border text-slate-100 rounded-lg focus:outline-none focus:border-brand-gold focus:ring-1 focus:ring-brand-gold transition-all duration-200 cursor-pointer;
+    @apply w-full min-h-[44px] px-4 py-3 bg-white border border-neutral-300 text-neutral-900 rounded-lg focus:outline-none focus:border-amber-500 focus:ring-1 focus:ring-amber-400 dark:bg-brand-dark dark:border-brand-dark-border dark:text-slate-100 dark:focus:border-brand-gold dark:focus:ring-brand-gold transition-all duration-200 cursor-pointer;
   }
 
   .form-label {
-    @apply block text-sm font-medium text-slate-300 mb-2;
+    @apply block text-sm font-medium text-neutral-700 dark:text-slate-300 mb-2;
   }
 
   /* Modal Backdrop */
